@@ -138,7 +138,7 @@ public interface BasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_OPERATION_COUNT = IdentifierPackage.IDENTIFIER_OPERATION_COUNT + 0;
+	int ENTITY_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link base.impl.DummyClassImpl <em>Dummy Class</em>}' class.
