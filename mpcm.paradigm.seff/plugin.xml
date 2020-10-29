@@ -10,7 +10,8 @@
       <!-- @generated seff -->
       <package
             uri="mpcm.paradigm.behaviour.seff"
-            class="seff.SeffPackage"/>
+            class="seff.SeffPackage"
+            genModel="model/seff.genmodel"/>
    </extension>
 
 </plugin>

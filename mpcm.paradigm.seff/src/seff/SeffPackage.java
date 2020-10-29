@@ -122,7 +122,7 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP = IdentifierPackage.IDENTIFIER_OPERATION_COUNT + 0;
+	int BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP = 0;
 
 	/**
 	 * The operation id for the '<em>Exactly One Start Action</em>' operation.
@@ -131,7 +131,7 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP = IdentifierPackage.IDENTIFIER_OPERATION_COUNT + 1;
+	int BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP = 1;
 
 	/**
 	 * The operation id for the '<em>Each Action Except Start Actionand Stop Action Must Hhave APredecessor And Successor</em>' operation.
@@ -140,7 +140,7 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP = IdentifierPackage.IDENTIFIER_OPERATION_COUNT + 2;
+	int BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP = 2;
 
 	/**
 	 * The number of operations of the '<em>Behaviour</em>' class.
@@ -149,7 +149,7 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BEHAVIOUR_OPERATION_COUNT = IdentifierPackage.IDENTIFIER_OPERATION_COUNT + 3;
+	int BEHAVIOUR_OPERATION_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.AbstractActionImpl <em>Abstract Action</em>}' class.
@@ -978,7 +978,7 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYNCHRONISATION_POINT_OPERATION_COUNT = IdentifierPackage.IDENTIFIER_OPERATION_COUNT + 0;
+	int SYNCHRONISATION_POINT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.AbstractLoopActionImpl <em>Abstract Loop Action</em>}' class.
