@@ -283,7 +283,7 @@
         <details key="documentation" value="&lt;p>&#xD;&#xA;    Type definition for a timeout failure-on-demand related to an AcquireAction for a certain PassiveResource (see the&#xD;&#xA;    documentation of the &quot;timeout&quot; attribute of the &quot;AcquireAction&quot; for further information).&#xD;&#xA;&lt;/p>"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="passiveResource__ResourceTimeoutFailureType"
-          ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//PassiveResource">
+          ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//PassiveResource">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The passive resource&amp;nbsp;whose&amp;nbsp;acquiring timeout is represented by this failure type&amp;nbsp;(see the documentation of&#xD;&#xA;the &quot;timeout&quot; attribute of the &quot;AcquireAction&quot; for further information)."/>
         </eAnnotations>
