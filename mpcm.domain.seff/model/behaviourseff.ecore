@@ -4,7 +4,7 @@
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
     <details key="documentation" value="Package containing the abstract behaviour model of components"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="BehaviourSEFF" eSuperTypes="../../mpcm.domain.repository/model/repository.ecore#//ServiceEffectSpecification">
+  <eClassifiers xsi:type="ecore:EClass" name="BehaviourSEFF" eSuperTypes="../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//ServiceEffectSpecification">
     <eStructuralFeatures xsi:type="ecore:EReference" name="behaviour" lowerBound="1"
         eType="ecore:EClass ../../mpcm.paradigm.behaviour.seff/model/seff.ecore#//Behaviour"
         containment="true"/>
@@ -93,9 +93,9 @@
       </eParameters>
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="calledService_ExternalService"
-        ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//OperationSignature"/>
+        ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//OperationSignature"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="role_ExternalService" ordered="false"
-        lowerBound="1" eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//OperationRequiredRole"/>
+        lowerBound="1" eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//OperationRequiredRole"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="retryCount" ordered="false"
         lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -127,14 +127,14 @@
       </eParameters>
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="passiveresource_AcquireAction"
-        ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//PassiveResource"/>
+        ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//PassiveResource"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ReleaseAction" eSuperTypes="../../mpcm.paradigm.behaviour.seff/model/seff.ecore#//AbstractInternalControlFlowAction">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The ReleaseAction increases the number of available item for the given passive resource type, before the current request&#xD;&#xA;can continue. It should be to execute by one of the other concurrent requests.&#xD;&#xA;Acquisition and release of passive resources happen instantaneously and do not consume any time except for waiting delays before actual acquisition. Resource locking may introduce deadlocks when simulating the model, however, for performance analysis with the PCM it is assumed that no deadlocks occur. Otherwise, the model first needs to be fixed accordingly before carrying out the performance prediction."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="passiveResource_ReleaseAction"
-        ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//PassiveResource"/>
+        ordered="false" lowerBound="1" eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//PassiveResource"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SetVariableAction" eSuperTypes="../../mpcm.paradigm.behaviour.seff/model/seff.ecore#//AbstractInternalControlFlowAction">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

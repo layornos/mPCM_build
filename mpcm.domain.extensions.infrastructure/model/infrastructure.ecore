@@ -10,7 +10,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="InfrastructureComponent">
       <eStructuralFeatures xsi:type="ecore:EReference" name="owner" lowerBound="1"
-          eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//ImplementationComponentType"/>
+          eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//ImplementationComponentType"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="InfrastructureInterface" eSuperTypes="../../mpcm.paradigm.repository/model/repository.ecore#//Interface">
       <eStructuralFeatures xsi:type="ecore:EReference" name="infrastructureSignatures__InfrastructureInterface"

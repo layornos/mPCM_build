@@ -73,6 +73,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="parentProvidesComponentTypes"
         ordered="false" upperBound="-1" eType="#//ProvidesComponentType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="confirmingImplComponentTypes"
-        upperBound="-1" eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//ImplementationComponentType"/>
+        upperBound="-1" eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//ImplementationComponentType"/>
   </eClassifiers>
 </ecore:EPackage>

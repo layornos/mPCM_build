@@ -7,7 +7,7 @@
       <details key="documentation" value="Class representing component-internal behaviour not accessible from the component's interface. Comparable to internal method in object-oriented programming. This behaviour can be called from within a resource demanding behaviour using an InternalCallAction."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="signature" lowerBound="1"
-        eType="ecore:EClass ../../mpcm.domain.repository/model/repository.ecore#//OperationSignature"
+        eType="ecore:EClass ../../mpcm.domain.softwarerepository/model/softwarerepository.ecore#//OperationSignature"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InternalCallAction" eSuperTypes="../../mpcm.domain.behaviourseff/model/behaviourseff.ecore#//CallAction ../../mpcm.paradigm.behaviour.seff/model/seff.ecore#//AbstractInternalControlFlowAction">
