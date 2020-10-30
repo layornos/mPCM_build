@@ -366,7 +366,7 @@ public class DatatypesPackageImpl extends EPackageImpl implements DatatypesPacka
 		compositeDataTypeEClass.getESuperTypes().add(this.getDataType());
 		innerDeclarationEClass.getESuperTypes().add(theBasePackage.getNamedElement());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(dataTypeEClass, DataType.class, "DataType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(primitiveDataTypeEClass, PrimitiveDataType.class, "PrimitiveDataType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

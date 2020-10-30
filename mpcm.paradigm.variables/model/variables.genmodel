@@ -4,7 +4,7 @@
     modelName="Variables" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     usedGenPackages="../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units"
-    operationReflection="true" importOrganizing="true">
+    importOrganizing="true">
   <foreignModel>variables.ecore</foreignModel>
   <genPackages prefix="Variables" disposableProviderFactory="true" ecorePackage="variables.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="variables.ecore#//VariableCharacterisationType">

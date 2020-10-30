@@ -9,9 +9,6 @@ import composition.CompositionPackage;
 import composition.Containable;
 
 import composition.util.CompositionValidator;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -211,23 +208,6 @@ public abstract class ComposedStructureImpl extends EntityImpl implements Compos
 				return content != null && !content.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case CompositionPackage.COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT__DIAGNOSTICCHAIN_MAP:
-				return MultipleConnectorsConstraint((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case CompositionPackage.COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT_FOR_ASSEMBLY_CONNECTORS__DIAGNOSTICCHAIN_MAP:
-				return MultipleConnectorsConstraintForAssemblyConnectors((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //ComposedStructureImpl

@@ -4,7 +4,7 @@
     modelName="Usage" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     usedGenPackages="../../mpcm.paradigm.base/model/base.genmodel#//base ../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units ../../mpcm.paradigm.variables/model/variables.genmodel#//variables"
-    operationReflection="true" importOrganizing="true">
+    importOrganizing="true">
   <foreignModel>usage.ecore</foreignModel>
   <genPackages prefix="Usage" disposableProviderFactory="true" ecorePackage="usage.ecore#/">
     <genClasses ecoreClass="usage.ecore#//ScenarioBehaviour">

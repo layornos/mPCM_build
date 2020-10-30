@@ -6,7 +6,6 @@ import base.BasePackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -124,42 +123,6 @@ public interface UsagePackage extends EPackage {
 	int SCENARIO_BEHAVIOUR_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 3;
 
 	/**
-	 * The operation id for the '<em>Exactlyonestart</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCENARIO_BEHAVIOUR___EXACTLYONESTART__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Exactlyonestop</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCENARIO_BEHAVIOUR___EXACTLYONESTOP__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Eachuseractionexcept Startand Stopmusthaveapredecessorandsuccessor</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCENARIO_BEHAVIOUR___EACHUSERACTIONEXCEPT_STARTAND_STOPMUSTHAVEAPREDECESSORANDSUCCESSOR__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Scenario Behaviour</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCENARIO_BEHAVIOUR_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 3;
-
-	/**
 	 * The meta object id for the '{@link usage.impl.AbstractUserActionImpl <em>Abstract User Action</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -222,15 +185,6 @@ public interface UsagePackage extends EPackage {
 	 * @ordered
 	 */
 	int ABSTRACT_USER_ACTION_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Abstract User Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABSTRACT_USER_ACTION_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link usage.impl.StartImpl <em>Start</em>}' class.
@@ -297,24 +251,6 @@ public interface UsagePackage extends EPackage {
 	int START_FEATURE_COUNT = ABSTRACT_USER_ACTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The operation id for the '<em>Start Has No Predecessor</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int START___START_HAS_NO_PREDECESSOR__DIAGNOSTICCHAIN_MAP = ABSTRACT_USER_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Start</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int START_OPERATION_COUNT = ABSTRACT_USER_ACTION_OPERATION_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link usage.impl.StopImpl <em>Stop</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -377,24 +313,6 @@ public interface UsagePackage extends EPackage {
 	 * @ordered
 	 */
 	int STOP_FEATURE_COUNT = ABSTRACT_USER_ACTION_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Stop Has No Successor</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STOP___STOP_HAS_NO_SUCCESSOR__DIAGNOSTICCHAIN_MAP = ABSTRACT_USER_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Stop</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STOP_OPERATION_COUNT = ABSTRACT_USER_ACTION_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link usage.impl.BranchImpl <em>Branch</em>}' class.
@@ -470,24 +388,6 @@ public interface UsagePackage extends EPackage {
 	int BRANCH_FEATURE_COUNT = ABSTRACT_USER_ACTION_FEATURE_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>All Branch Probabilities Must Sum Up To1</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BRANCH___ALL_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP = ABSTRACT_USER_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Branch</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BRANCH_OPERATION_COUNT = ABSTRACT_USER_ACTION_OPERATION_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link usage.impl.BranchTransitionImpl <em>Branch Transition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -532,15 +432,6 @@ public interface UsagePackage extends EPackage {
 	 * @ordered
 	 */
 	int BRANCH_TRANSITION_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Branch Transition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BRANCH_TRANSITION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link usage.impl.LoopImpl <em>Loop</em>}' class.
@@ -625,15 +516,6 @@ public interface UsagePackage extends EPackage {
 	int LOOP_FEATURE_COUNT = ABSTRACT_USER_ACTION_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>Loop</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOOP_OPERATION_COUNT = ABSTRACT_USER_ACTION_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link usage.impl.DelayImpl <em>Delay</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -707,16 +589,6 @@ public interface UsagePackage extends EPackage {
 	int DELAY_FEATURE_COUNT = ABSTRACT_USER_ACTION_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Delay</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DELAY_OPERATION_COUNT = ABSTRACT_USER_ACTION_OPERATION_COUNT + 0;
-
-
-	/**
 	 * Returns the meta object for class '{@link usage.ScenarioBehaviour <em>Scenario Behaviour</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -758,36 +630,6 @@ public interface UsagePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getScenarioBehaviour_Actions_ScenarioBehaviour();
-
-	/**
-	 * Returns the meta object for the '{@link usage.ScenarioBehaviour#Exactlyonestart(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Exactlyonestart</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Exactlyonestart</em>' operation.
-	 * @see usage.ScenarioBehaviour#Exactlyonestart(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getScenarioBehaviour__Exactlyonestart__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link usage.ScenarioBehaviour#Exactlyonestop(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Exactlyonestop</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Exactlyonestop</em>' operation.
-	 * @see usage.ScenarioBehaviour#Exactlyonestop(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getScenarioBehaviour__Exactlyonestop__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link usage.ScenarioBehaviour#EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Eachuseractionexcept Startand Stopmusthaveapredecessorandsuccessor</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Eachuseractionexcept Startand Stopmusthaveapredecessorandsuccessor</em>' operation.
-	 * @see usage.ScenarioBehaviour#EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getScenarioBehaviour__EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link usage.AbstractUserAction <em>Abstract User Action</em>}'.
@@ -843,16 +685,6 @@ public interface UsagePackage extends EPackage {
 	EClass getStart();
 
 	/**
-	 * Returns the meta object for the '{@link usage.Start#StartHasNoPredecessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Start Has No Predecessor</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Start Has No Predecessor</em>' operation.
-	 * @see usage.Start#StartHasNoPredecessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getStart__StartHasNoPredecessor__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link usage.Stop <em>Stop</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -861,16 +693,6 @@ public interface UsagePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getStop();
-
-	/**
-	 * Returns the meta object for the '{@link usage.Stop#StopHasNoSuccessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Stop Has No Successor</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Stop Has No Successor</em>' operation.
-	 * @see usage.Stop#StopHasNoSuccessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getStop__StopHasNoSuccessor__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link usage.Branch <em>Branch</em>}'.
@@ -892,16 +714,6 @@ public interface UsagePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBranch_BranchTransitions_Branch();
-
-	/**
-	 * Returns the meta object for the '{@link usage.Branch#AllBranchProbabilitiesMustSumUpTo1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>All Branch Probabilities Must Sum Up To1</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>All Branch Probabilities Must Sum Up To1</em>' operation.
-	 * @see usage.Branch#AllBranchProbabilitiesMustSumUpTo1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getBranch__AllBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link usage.BranchTransition <em>Branch Transition</em>}'.
@@ -1057,30 +869,6 @@ public interface UsagePackage extends EPackage {
 		EReference SCENARIO_BEHAVIOUR__ACTIONS_SCENARIO_BEHAVIOUR = eINSTANCE.getScenarioBehaviour_Actions_ScenarioBehaviour();
 
 		/**
-		 * The meta object literal for the '<em><b>Exactlyonestart</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SCENARIO_BEHAVIOUR___EXACTLYONESTART__DIAGNOSTICCHAIN_MAP = eINSTANCE.getScenarioBehaviour__Exactlyonestart__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>Exactlyonestop</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SCENARIO_BEHAVIOUR___EXACTLYONESTOP__DIAGNOSTICCHAIN_MAP = eINSTANCE.getScenarioBehaviour__Exactlyonestop__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>Eachuseractionexcept Startand Stopmusthaveapredecessorandsuccessor</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SCENARIO_BEHAVIOUR___EACHUSERACTIONEXCEPT_STARTAND_STOPMUSTHAVEAPREDECESSORANDSUCCESSOR__DIAGNOSTICCHAIN_MAP = eINSTANCE.getScenarioBehaviour__EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link usage.impl.AbstractUserActionImpl <em>Abstract User Action</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1125,14 +913,6 @@ public interface UsagePackage extends EPackage {
 		EClass START = eINSTANCE.getStart();
 
 		/**
-		 * The meta object literal for the '<em><b>Start Has No Predecessor</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation START___START_HAS_NO_PREDECESSOR__DIAGNOSTICCHAIN_MAP = eINSTANCE.getStart__StartHasNoPredecessor__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link usage.impl.StopImpl <em>Stop</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1141,14 +921,6 @@ public interface UsagePackage extends EPackage {
 		 * @generated
 		 */
 		EClass STOP = eINSTANCE.getStop();
-
-		/**
-		 * The meta object literal for the '<em><b>Stop Has No Successor</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STOP___STOP_HAS_NO_SUCCESSOR__DIAGNOSTICCHAIN_MAP = eINSTANCE.getStop__StopHasNoSuccessor__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link usage.impl.BranchImpl <em>Branch</em>}' class.
@@ -1167,14 +939,6 @@ public interface UsagePackage extends EPackage {
 		 * @generated
 		 */
 		EReference BRANCH__BRANCH_TRANSITIONS_BRANCH = eINSTANCE.getBranch_BranchTransitions_Branch();
-
-		/**
-		 * The meta object literal for the '<em><b>All Branch Probabilities Must Sum Up To1</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation BRANCH___ALL_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBranch__AllBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link usage.impl.BranchTransitionImpl <em>Branch Transition</em>}' class.

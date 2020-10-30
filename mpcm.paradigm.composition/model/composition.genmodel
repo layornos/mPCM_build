@@ -4,7 +4,7 @@
     modelName="Composition" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     usedGenPackages="../../mpcm.paradigm.base/model/base.genmodel#//base ../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../mpcm.paradigm.repository/model/repository.genmodel#//repository ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units ../../mpcm.paradigm.variables/model/variables.genmodel#//variables"
-    operationReflection="true" importOrganizing="true">
+    importOrganizing="true">
   <foreignModel>composition.ecore</foreignModel>
   <genPackages prefix="Composition" disposableProviderFactory="true" ecorePackage="composition.ecore#/">
     <genClasses image="false" ecoreClass="composition.ecore#//Containable"/>

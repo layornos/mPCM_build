@@ -7,7 +7,6 @@ import base.BasePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -125,24 +124,6 @@ public interface RepositoryPackage extends EPackage {
 	int INTERFACE_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 3;
 
 	/**
-	 * The operation id for the '<em>No Protocol Type ID Used Twice</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE___NO_PROTOCOL_TYPE_ID_USED_TWICE__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Interface</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link repository.impl.ProtocolImpl <em>Protocol</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -169,15 +150,6 @@ public interface RepositoryPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROTOCOL_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Protocol</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROTOCOL_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link repository.impl.SignatureImpl <em>Signature</em>}' class.
@@ -215,15 +187,6 @@ public interface RepositoryPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIGNATURE_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Signature</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIGNATURE_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.impl.RequiredCharacterisationImpl <em>Required Characterisation</em>}' class.
@@ -272,15 +235,6 @@ public interface RepositoryPackage extends EPackage {
 	int REQUIRED_CHARACTERISATION_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Required Characterisation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQUIRED_CHARACTERISATION_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link repository.impl.ParameterImpl <em>Parameter</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -327,15 +281,6 @@ public interface RepositoryPackage extends EPackage {
 	int PARAMETER_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Parameter</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link repository.impl.RoleImpl <em>Role</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -371,15 +316,6 @@ public interface RepositoryPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLE_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Role</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROLE_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.impl.ProvidedRoleImpl <em>Provided Role</em>}' class.
@@ -428,15 +364,6 @@ public interface RepositoryPackage extends EPackage {
 	int PROVIDED_ROLE_FEATURE_COUNT = ROLE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Provided Role</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROVIDED_ROLE_OPERATION_COUNT = ROLE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link repository.impl.RequiredRoleImpl <em>Required Role</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -481,15 +408,6 @@ public interface RepositoryPackage extends EPackage {
 	 * @ordered
 	 */
 	int REQUIRED_ROLE_FEATURE_COUNT = ROLE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Required Role</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQUIRED_ROLE_OPERATION_COUNT = ROLE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.impl.InterfaceProvidingEntityImpl <em>Interface Providing Entity</em>}' class.
@@ -538,15 +456,6 @@ public interface RepositoryPackage extends EPackage {
 	int INTERFACE_PROVIDING_ENTITY_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Interface Providing Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE_PROVIDING_ENTITY_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link repository.impl.InterfaceRequiringEntityImpl <em>Interface Requiring Entity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -591,15 +500,6 @@ public interface RepositoryPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERFACE_REQUIRING_ENTITY_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Interface Requiring Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE_REQUIRING_ENTITY_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.impl.InterfaceProvidingRequiringEntityImpl <em>Interface Providing Requiring Entity</em>}' class.
@@ -657,15 +557,6 @@ public interface RepositoryPackage extends EPackage {
 	int INTERFACE_PROVIDING_REQUIRING_ENTITY_FEATURE_COUNT = INTERFACE_PROVIDING_ENTITY_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Interface Providing Requiring Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE_PROVIDING_REQUIRING_ENTITY_OPERATION_COUNT = INTERFACE_PROVIDING_ENTITY_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link repository.impl.RepositoryComponentImpl <em>Component</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -721,15 +612,6 @@ public interface RepositoryPackage extends EPackage {
 	int REPOSITORY_COMPONENT_FEATURE_COUNT = INTERFACE_PROVIDING_REQUIRING_ENTITY_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Component</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REPOSITORY_COMPONENT_OPERATION_COUNT = INTERFACE_PROVIDING_REQUIRING_ENTITY_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link repository.ParameterModifier <em>Parameter Modifier</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -782,16 +664,6 @@ public interface RepositoryPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getInterface_RequiredCharacterisations();
-
-	/**
-	 * Returns the meta object for the '{@link repository.Interface#NoProtocolTypeIDUsedTwice(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>No Protocol Type ID Used Twice</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>No Protocol Type ID Used Twice</em>' operation.
-	 * @see repository.Interface#NoProtocolTypeIDUsedTwice(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getInterface__NoProtocolTypeIDUsedTwice__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link repository.Protocol <em>Protocol</em>}'.
@@ -1090,14 +962,6 @@ public interface RepositoryPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INTERFACE__REQUIRED_CHARACTERISATIONS = eINSTANCE.getInterface_RequiredCharacterisations();
-
-		/**
-		 * The meta object literal for the '<em><b>No Protocol Type ID Used Twice</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INTERFACE___NO_PROTOCOL_TYPE_ID_USED_TWICE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getInterface__NoProtocolTypeIDUsedTwice__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link repository.impl.ProtocolImpl <em>Protocol</em>}' class.

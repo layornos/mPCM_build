@@ -79,15 +79,6 @@ public interface DatatypesPackage extends EPackage {
 	int DATA_TYPE_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Data Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_TYPE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link repository.datatypes.impl.PrimitiveDataTypeImpl <em>Primitive Data Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -114,15 +105,6 @@ public interface DatatypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRIMITIVE_DATA_TYPE_FEATURE_COUNT = DATA_TYPE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Primitive Data Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE_DATA_TYPE_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.datatypes.impl.CollectionDataTypeImpl <em>Collection Data Type</em>}' class.
@@ -169,15 +151,6 @@ public interface DatatypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int COLLECTION_DATA_TYPE_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Collection Data Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_DATA_TYPE_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.datatypes.impl.CompositeDataTypeImpl <em>Composite Data Type</em>}' class.
@@ -235,15 +208,6 @@ public interface DatatypesPackage extends EPackage {
 	int COMPOSITE_DATA_TYPE_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>Composite Data Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSITE_DATA_TYPE_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link repository.datatypes.impl.InnerDeclarationImpl <em>Inner Declaration</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -288,15 +252,6 @@ public interface DatatypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int INNER_DECLARATION_FEATURE_COUNT = BasePackage.NAMED_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Inner Declaration</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INNER_DECLARATION_OPERATION_COUNT = BasePackage.NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link repository.datatypes.PrimitiveTypeEnum <em>Primitive Type Enum</em>}' enum.

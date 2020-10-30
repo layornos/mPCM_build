@@ -6,9 +6,6 @@ import composition.ComposedProvidingRequiringEntity;
 import composition.CompositionPackage;
 
 import composition.util.CompositionValidator;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -297,21 +294,6 @@ public abstract class ComposedProvidingRequiringEntityImpl extends ComposedStruc
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case CompositionPackage.COMPOSED_PROVIDING_REQUIRING_ENTITY___PROVIDED_ROLES_MUST_BE_BOUND__DIAGNOSTICCHAIN_MAP:
-				return ProvidedRolesMustBeBound((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //ComposedProvidingRequiringEntityImpl

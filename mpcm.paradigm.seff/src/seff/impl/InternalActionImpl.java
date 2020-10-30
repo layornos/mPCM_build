@@ -2,15 +2,11 @@
  */
 package seff.impl;
 
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
@@ -99,23 +95,6 @@ public class InternalActionImpl extends AbstractInternalControlFlowActionImpl im
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case SeffPackage.INTERNAL_ACTION___MULTIPLE_INTERNAL_OCCURRENCE_DESCRIPTIONS_PER_FAILURE_TYPE_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP:
-				return MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case SeffPackage.INTERNAL_ACTION___SUM_OF_INTERNAL_ACTION_FAILURE_PROBABILITIES_MUST_NOT_EXCEED1__DIAGNOSTICCHAIN_MAP:
-				return SumOfInternalActionFailureProbabilitiesMustNotExceed1((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //InternalActionImpl

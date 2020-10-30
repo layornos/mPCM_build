@@ -253,16 +253,6 @@ public class VariablesPackageImpl extends EPackageImpl implements VariablesPacka
 	 * @generated
 	 */
 	@Override
-	public EOperation getPCMRandomVariable__SpecificationMustNotBeNULL__DiagnosticChain_Map() {
-		return pcmRandomVariableEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EEnum getVariableCharacterisationType() {
 		return variableCharacterisationTypeEEnum;
 	}
@@ -309,7 +299,6 @@ public class VariablesPackageImpl extends EPackageImpl implements VariablesPacka
 		createEAttribute(characterisedVariableEClass, CHARACTERISED_VARIABLE__CHARACTERISATION_TYPE);
 
 		pcmRandomVariableEClass = createEClass(PCM_RANDOM_VARIABLE);
-		createEOperation(pcmRandomVariableEClass, PCM_RANDOM_VARIABLE___SPECIFICATION_MUST_NOT_BE_NULL__DIAGNOSTICCHAIN_MAP);
 
 		// Create enums
 		variableCharacterisationTypeEEnum = createEEnum(VARIABLE_CHARACTERISATION_TYPE);
@@ -349,7 +338,7 @@ public class VariablesPackageImpl extends EPackageImpl implements VariablesPacka
 		characterisedVariableEClass.getESuperTypes().add(theStoexPackage.getVariable());
 		pcmRandomVariableEClass.getESuperTypes().add(theStoexPackage.getRandomVariable());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(variableUsageEClass, VariableUsage.class, "VariableUsage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getVariableUsage_VariableCharacterisation_VariableUsage(), this.getVariableCharacterisation(), this.getVariableCharacterisation_VariableUsage_VariableCharacterisation(), "variableCharacterisation_VariableUsage", null, 0, -1, VariableUsage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getVariableUsage_NamedReference__VariableUsage(), theStoexPackage.getAbstractNamedReference(), null, "namedReference__VariableUsage", null, 1, 1, VariableUsage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -364,7 +353,7 @@ public class VariablesPackageImpl extends EPackageImpl implements VariablesPacka
 
 		initEClass(pcmRandomVariableEClass, PCMRandomVariable.class, "PCMRandomVariable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = initEOperation(getPCMRandomVariable__SpecificationMustNotBeNULL__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "SpecificationMustNotBeNULL", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(pcmRandomVariableEClass, ecorePackage.getEBoolean(), "SpecificationMustNotBeNULL", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -398,7 +387,7 @@ public class VariablesPackageImpl extends EPackageImpl implements VariablesPacka
 	protected void createGenModel_1Annotations() {
 		String source = "http://www.eclipse.org/uml2/1.1.0/GenModel";
 		addAnnotation
-		  (getPCMRandomVariable__SpecificationMustNotBeNULL__DiagnosticChain_Map(),
+		  (pcmRandomVariableEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "not self.specification.oclIsUndefined() and self.specification <> \'\'"

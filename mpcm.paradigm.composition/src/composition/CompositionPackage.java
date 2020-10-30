@@ -5,7 +5,6 @@ package composition;
 import base.BasePackage;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -78,15 +77,6 @@ public interface CompositionPackage extends EPackage {
 	int CONTAINABLE_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Containable</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONTAINABLE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link composition.impl.ComposedStructureImpl <em>Composed Structure</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -131,33 +121,6 @@ public interface CompositionPackage extends EPackage {
 	 * @ordered
 	 */
 	int COMPOSED_STRUCTURE_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Multiple Connectors Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Multiple Connectors Constraint For Assembly Connectors</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT_FOR_ASSEMBLY_CONNECTORS__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Composed Structure</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_STRUCTURE_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link composition.impl.ComposedProvidingRequiringEntityImpl <em>Composed Providing Requiring Entity</em>}' class.
@@ -224,42 +187,6 @@ public interface CompositionPackage extends EPackage {
 	int COMPOSED_PROVIDING_REQUIRING_ENTITY_FEATURE_COUNT = COMPOSED_STRUCTURE_FEATURE_COUNT + 2;
 
 	/**
-	 * The operation id for the '<em>Multiple Connectors Constraint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_PROVIDING_REQUIRING_ENTITY___MULTIPLE_CONNECTORS_CONSTRAINT__DIAGNOSTICCHAIN_MAP = COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Multiple Connectors Constraint For Assembly Connectors</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_PROVIDING_REQUIRING_ENTITY___MULTIPLE_CONNECTORS_CONSTRAINT_FOR_ASSEMBLY_CONNECTORS__DIAGNOSTICCHAIN_MAP = COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT_FOR_ASSEMBLY_CONNECTORS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Provided Roles Must Be Bound</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_PROVIDING_REQUIRING_ENTITY___PROVIDED_ROLES_MUST_BE_BOUND__DIAGNOSTICCHAIN_MAP = COMPOSED_STRUCTURE_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Composed Providing Requiring Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPOSED_PROVIDING_REQUIRING_ENTITY_OPERATION_COUNT = COMPOSED_STRUCTURE_OPERATION_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link composition.impl.AssemblyContextImpl <em>Assembly Context</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -324,15 +251,6 @@ public interface CompositionPackage extends EPackage {
 	int ASSEMBLY_CONTEXT_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of operations of the '<em>Assembly Context</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSEMBLY_CONTEXT_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link composition.impl.ConnectorImpl <em>Connector</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -377,15 +295,6 @@ public interface CompositionPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONNECTOR_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Connector</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONNECTOR_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link composition.impl.DelegationConnectorImpl <em>Delegation Connector</em>}' class.
@@ -434,16 +343,6 @@ public interface CompositionPackage extends EPackage {
 	int DELEGATION_CONNECTOR_FEATURE_COUNT = CONNECTOR_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Delegation Connector</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DELEGATION_CONNECTOR_OPERATION_COUNT = CONNECTOR_OPERATION_COUNT + 0;
-
-
-	/**
 	 * Returns the meta object for class '{@link composition.Containable <em>Containable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -475,26 +374,6 @@ public interface CompositionPackage extends EPackage {
 	EReference getComposedStructure_Content();
 
 	/**
-	 * Returns the meta object for the '{@link composition.ComposedStructure#MultipleConnectorsConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Multiple Connectors Constraint</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Multiple Connectors Constraint</em>' operation.
-	 * @see composition.ComposedStructure#MultipleConnectorsConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getComposedStructure__MultipleConnectorsConstraint__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link composition.ComposedStructure#MultipleConnectorsConstraintForAssemblyConnectors(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Multiple Connectors Constraint For Assembly Connectors</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Multiple Connectors Constraint For Assembly Connectors</em>' operation.
-	 * @see composition.ComposedStructure#MultipleConnectorsConstraintForAssemblyConnectors(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getComposedStructure__MultipleConnectorsConstraintForAssemblyConnectors__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link composition.ComposedProvidingRequiringEntity <em>Composed Providing Requiring Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -503,16 +382,6 @@ public interface CompositionPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getComposedProvidingRequiringEntity();
-
-	/**
-	 * Returns the meta object for the '{@link composition.ComposedProvidingRequiringEntity#ProvidedRolesMustBeBound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Provided Roles Must Be Bound</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Provided Roles Must Be Bound</em>' operation.
-	 * @see composition.ComposedProvidingRequiringEntity#ProvidedRolesMustBeBound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getComposedProvidingRequiringEntity__ProvidedRolesMustBeBound__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link composition.AssemblyContext <em>Assembly Context</em>}'.
@@ -640,22 +509,6 @@ public interface CompositionPackage extends EPackage {
 		EReference COMPOSED_STRUCTURE__CONTENT = eINSTANCE.getComposedStructure_Content();
 
 		/**
-		 * The meta object literal for the '<em><b>Multiple Connectors Constraint</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getComposedStructure__MultipleConnectorsConstraint__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>Multiple Connectors Constraint For Assembly Connectors</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT_FOR_ASSEMBLY_CONNECTORS__DIAGNOSTICCHAIN_MAP = eINSTANCE.getComposedStructure__MultipleConnectorsConstraintForAssemblyConnectors__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link composition.impl.ComposedProvidingRequiringEntityImpl <em>Composed Providing Requiring Entity</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -664,14 +517,6 @@ public interface CompositionPackage extends EPackage {
 		 * @generated
 		 */
 		EClass COMPOSED_PROVIDING_REQUIRING_ENTITY = eINSTANCE.getComposedProvidingRequiringEntity();
-
-		/**
-		 * The meta object literal for the '<em><b>Provided Roles Must Be Bound</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation COMPOSED_PROVIDING_REQUIRING_ENTITY___PROVIDED_ROLES_MUST_BE_BOUND__DIAGNOSTICCHAIN_MAP = eINSTANCE.getComposedProvidingRequiringEntity__ProvidedRolesMustBeBound__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link composition.impl.AssemblyContextImpl <em>Assembly Context</em>}' class.

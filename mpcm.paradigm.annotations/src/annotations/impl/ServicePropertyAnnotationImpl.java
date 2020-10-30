@@ -211,7 +211,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetQosAnnotations_SpecifiedQoSAnnotation((AnnotationRoot)otherEnd, msgs);
 		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
+		return eDynamicInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -225,7 +225,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 			case AnnotationsPackage.SERVICE_PROPERTY_ANNOTATION__QOS_ANNOTATIONS_SPECIFIED_QO_SANNOTATION:
 				return basicSetQosAnnotations_SpecifiedQoSAnnotation(null, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		return eDynamicInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -239,7 +239,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 			case AnnotationsPackage.SERVICE_PROPERTY_ANNOTATION__QOS_ANNOTATIONS_SPECIFIED_QO_SANNOTATION:
 				return eInternalContainer().eInverseRemove(this, AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS, AnnotationRoot.class, msgs);
 		}
-		return super.eBasicRemoveFromContainerFeature(msgs);
+		return eDynamicBasicRemoveFromContainer(msgs);
 	}
 
 	/**
@@ -259,7 +259,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 			case AnnotationsPackage.SERVICE_PROPERTY_ANNOTATION__QOS_ANNOTATIONS_SPECIFIED_QO_SANNOTATION:
 				return getQosAnnotations_SpecifiedQoSAnnotation();
 		}
-		return super.eGet(featureID, resolve, coreType);
+		return eDynamicGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,7 +280,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 				setQosAnnotations_SpecifiedQoSAnnotation((AnnotationRoot)newValue);
 				return;
 		}
-		super.eSet(featureID, newValue);
+		eDynamicSet(featureID, newValue);
 	}
 
 	/**
@@ -301,7 +301,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 				setQosAnnotations_SpecifiedQoSAnnotation((AnnotationRoot)null);
 				return;
 		}
-		super.eUnset(featureID);
+		eDynamicUnset(featureID);
 	}
 
 	/**
@@ -319,7 +319,7 @@ public abstract class ServicePropertyAnnotationImpl extends MinimalEObjectImpl.C
 			case AnnotationsPackage.SERVICE_PROPERTY_ANNOTATION__QOS_ANNOTATIONS_SPECIFIED_QO_SANNOTATION:
 				return getQosAnnotations_SpecifiedQoSAnnotation() != null;
 		}
-		return super.eIsSet(featureID);
+		return eDynamicIsSet(featureID);
 	}
 
 } //ServicePropertyAnnotationImpl

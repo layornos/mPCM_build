@@ -98,10 +98,12 @@ public abstract class EntityImpl extends IdentifierImpl implements Entity {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case BasePackage.ENTITY__ID:
+				return getId();
 			case BasePackage.ENTITY__ENTITY_NAME:
 				return getEntityName();
 		}
-		return super.eGet(featureID, resolve, coreType);
+		return eDynamicGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -112,11 +114,14 @@ public abstract class EntityImpl extends IdentifierImpl implements Entity {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case BasePackage.ENTITY__ID:
+				setId((String)newValue);
+				return;
 			case BasePackage.ENTITY__ENTITY_NAME:
 				setEntityName((String)newValue);
 				return;
 		}
-		super.eSet(featureID, newValue);
+		eDynamicSet(featureID, newValue);
 	}
 
 	/**
@@ -127,11 +132,14 @@ public abstract class EntityImpl extends IdentifierImpl implements Entity {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case BasePackage.ENTITY__ID:
+				setId(ID_EDEFAULT);
+				return;
 			case BasePackage.ENTITY__ENTITY_NAME:
 				setEntityName(ENTITY_NAME_EDEFAULT);
 				return;
 		}
-		super.eUnset(featureID);
+		eDynamicUnset(featureID);
 	}
 
 	/**
@@ -142,10 +150,12 @@ public abstract class EntityImpl extends IdentifierImpl implements Entity {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case BasePackage.ENTITY__ID:
+				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
 			case BasePackage.ENTITY__ENTITY_NAME:
 				return ENTITY_NAME_EDEFAULT == null ? entityName != null : !ENTITY_NAME_EDEFAULT.equals(entityName);
 		}
-		return super.eIsSet(featureID);
+		return eDynamicIsSet(featureID);
 	}
 
 	/**

@@ -2,8 +2,6 @@
  */
 package seff.impl;
 
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -224,23 +222,6 @@ public class BranchActionImpl extends AbstractInternalControlFlowActionImpl impl
 				return branches_Branch != null && !branches_Branch.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case SeffPackage.BRANCH_ACTION___EITHER_GUARDED_BRANCHES_OR_PROBABILISITIC_BRANCH_TRANSITIONS__DIAGNOSTICCHAIN_MAP:
-				return EitherGuardedBranchesOrProbabilisiticBranchTransitions((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case SeffPackage.BRANCH_ACTION___ALL_PROBABILISTIC_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP:
-				return AllProbabilisticBranchProbabilitiesMustSumUpTo1((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //BranchActionImpl

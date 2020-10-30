@@ -7,7 +7,6 @@ import base.BasePackage;
 import de.uka.ipd.sdq.identifier.IdentifierPackage;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -116,42 +115,6 @@ public interface SeffPackage extends EPackage {
 	int BEHAVIOUR_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 3;
 
 	/**
-	 * The operation id for the '<em>Exactly One Stop Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP = 0;
-
-	/**
-	 * The operation id for the '<em>Exactly One Start Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP = 1;
-
-	/**
-	 * The operation id for the '<em>Each Action Except Start Actionand Stop Action Must Hhave APredecessor And Successor</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP = 2;
-
-	/**
-	 * The number of operations of the '<em>Behaviour</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BEHAVIOUR_OPERATION_COUNT = 3;
-
-	/**
 	 * The meta object id for the '{@link seff.impl.AbstractActionImpl <em>Abstract Action</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -214,15 +177,6 @@ public interface SeffPackage extends EPackage {
 	 * @ordered
 	 */
 	int ABSTRACT_ACTION_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Abstract Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABSTRACT_ACTION_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.AbstractInternalControlFlowActionImpl <em>Abstract Internal Control Flow Action</em>}' class.
@@ -289,15 +243,6 @@ public interface SeffPackage extends EPackage {
 	int ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT = ABSTRACT_ACTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Abstract Internal Control Flow Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT = ABSTRACT_ACTION_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link seff.impl.StartActionImpl <em>Start Action</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -360,24 +305,6 @@ public interface SeffPackage extends EPackage {
 	 * @ordered
 	 */
 	int START_ACTION_FEATURE_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Start Action Predecessor Must Not Be Defined</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int START_ACTION___START_ACTION_PREDECESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Start Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int START_ACTION_OPERATION_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.StopActionImpl <em>Stop Action</em>}' class.
@@ -444,24 +371,6 @@ public interface SeffPackage extends EPackage {
 	int STOP_ACTION_FEATURE_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The operation id for the '<em>Stop Action Successor Must Not Be Defined</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STOP_ACTION___STOP_ACTION_SUCCESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Stop Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STOP_ACTION_OPERATION_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link seff.impl.InternalActionImpl <em>Internal Action</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -524,33 +433,6 @@ public interface SeffPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_ACTION_FEATURE_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Multiple Internal Occurrence Descriptions Per Failure Type Not Allowed</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_ACTION___MULTIPLE_INTERNAL_OCCURRENCE_DESCRIPTIONS_PER_FAILURE_TYPE_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Sum Of Internal Action Failure Probabilities Must Not Exceed1</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_ACTION___SUM_OF_INTERNAL_ACTION_FAILURE_PROBABILITIES_MUST_NOT_EXCEED1__DIAGNOSTICCHAIN_MAP = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Internal Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_ACTION_OPERATION_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.BranchActionImpl <em>Branch Action</em>}' class.
@@ -626,33 +508,6 @@ public interface SeffPackage extends EPackage {
 	int BRANCH_ACTION_FEATURE_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>Either Guarded Branches Or Probabilisitic Branch Transitions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BRANCH_ACTION___EITHER_GUARDED_BRANCHES_OR_PROBABILISITIC_BRANCH_TRANSITIONS__DIAGNOSTICCHAIN_MAP = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>All Probabilistic Branch Probabilities Must Sum Up To1</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BRANCH_ACTION___ALL_PROBABILISTIC_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Branch Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BRANCH_ACTION_OPERATION_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 2;
-
-	/**
 	 * The meta object id for the '{@link seff.impl.AbstractBranchTransitionImpl <em>Abstract Branch Transition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -706,15 +561,6 @@ public interface SeffPackage extends EPackage {
 	 * @ordered
 	 */
 	int ABSTRACT_BRANCH_TRANSITION_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Abstract Branch Transition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABSTRACT_BRANCH_TRANSITION_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.ForkActionImpl <em>Fork Action</em>}' class.
@@ -799,15 +645,6 @@ public interface SeffPackage extends EPackage {
 	int FORK_ACTION_FEATURE_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>Fork Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORK_ACTION_OPERATION_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link seff.impl.ForkedBehaviourImpl <em>Forked Behaviour</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -881,42 +718,6 @@ public interface SeffPackage extends EPackage {
 	int FORKED_BEHAVIOUR_FEATURE_COUNT = BEHAVIOUR_FEATURE_COUNT + 2;
 
 	/**
-	 * The operation id for the '<em>Exactly One Stop Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORKED_BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP = BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Exactly One Start Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORKED_BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP = BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Each Action Except Start Actionand Stop Action Must Hhave APredecessor And Successor</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORKED_BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP = BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The number of operations of the '<em>Forked Behaviour</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORKED_BEHAVIOUR_OPERATION_COUNT = BEHAVIOUR_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link seff.impl.SynchronisationPointImpl <em>Synchronisation Point</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -970,15 +771,6 @@ public interface SeffPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYNCHRONISATION_POINT_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Synchronisation Point</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYNCHRONISATION_POINT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.AbstractLoopActionImpl <em>Abstract Loop Action</em>}' class.
@@ -1052,15 +844,6 @@ public interface SeffPackage extends EPackage {
 	 * @ordered
 	 */
 	int ABSTRACT_LOOP_ACTION_FEATURE_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Abstract Loop Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABSTRACT_LOOP_ACTION_OPERATION_COUNT = ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link seff.impl.LoopActionImpl <em>Loop Action</em>}' class.
@@ -1145,16 +928,6 @@ public interface SeffPackage extends EPackage {
 	int LOOP_ACTION_FEATURE_COUNT = ABSTRACT_LOOP_ACTION_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Loop Action</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOOP_ACTION_OPERATION_COUNT = ABSTRACT_LOOP_ACTION_OPERATION_COUNT + 0;
-
-
-	/**
 	 * Returns the meta object for class '{@link seff.Behaviour <em>Behaviour</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1196,36 +969,6 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBehaviour_Steps_Behaviour();
-
-	/**
-	 * Returns the meta object for the '{@link seff.Behaviour#ExactlyOneStopAction(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Exactly One Stop Action</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Exactly One Stop Action</em>' operation.
-	 * @see seff.Behaviour#ExactlyOneStopAction(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getBehaviour__ExactlyOneStopAction__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link seff.Behaviour#ExactlyOneStartAction(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Exactly One Start Action</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Exactly One Start Action</em>' operation.
-	 * @see seff.Behaviour#ExactlyOneStartAction(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getBehaviour__ExactlyOneStartAction__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link seff.Behaviour#EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Each Action Except Start Actionand Stop Action Must Hhave APredecessor And Successor</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Each Action Except Start Actionand Stop Action Must Hhave APredecessor And Successor</em>' operation.
-	 * @see seff.Behaviour#EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getBehaviour__EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link seff.AbstractAction <em>Abstract Action</em>}'.
@@ -1291,16 +1034,6 @@ public interface SeffPackage extends EPackage {
 	EClass getStartAction();
 
 	/**
-	 * Returns the meta object for the '{@link seff.StartAction#StartActionPredecessorMustNotBeDefined(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Start Action Predecessor Must Not Be Defined</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Start Action Predecessor Must Not Be Defined</em>' operation.
-	 * @see seff.StartAction#StartActionPredecessorMustNotBeDefined(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getStartAction__StartActionPredecessorMustNotBeDefined__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link seff.StopAction <em>Stop Action</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1311,16 +1044,6 @@ public interface SeffPackage extends EPackage {
 	EClass getStopAction();
 
 	/**
-	 * Returns the meta object for the '{@link seff.StopAction#StopActionSuccessorMustNotBeDefined(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Stop Action Successor Must Not Be Defined</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Stop Action Successor Must Not Be Defined</em>' operation.
-	 * @see seff.StopAction#StopActionSuccessorMustNotBeDefined(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getStopAction__StopActionSuccessorMustNotBeDefined__DiagnosticChain_Map();
-
-	/**
 	 * Returns the meta object for class '{@link seff.InternalAction <em>Internal Action</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1329,26 +1052,6 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalAction();
-
-	/**
-	 * Returns the meta object for the '{@link seff.InternalAction#MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Multiple Internal Occurrence Descriptions Per Failure Type Not Allowed</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Multiple Internal Occurrence Descriptions Per Failure Type Not Allowed</em>' operation.
-	 * @see seff.InternalAction#MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getInternalAction__MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link seff.InternalAction#SumOfInternalActionFailureProbabilitiesMustNotExceed1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Sum Of Internal Action Failure Probabilities Must Not Exceed1</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Sum Of Internal Action Failure Probabilities Must Not Exceed1</em>' operation.
-	 * @see seff.InternalAction#SumOfInternalActionFailureProbabilitiesMustNotExceed1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getInternalAction__SumOfInternalActionFailureProbabilitiesMustNotExceed1__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link seff.BranchAction <em>Branch Action</em>}'.
@@ -1370,26 +1073,6 @@ public interface SeffPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBranchAction_Branches_Branch();
-
-	/**
-	 * Returns the meta object for the '{@link seff.BranchAction#EitherGuardedBranchesOrProbabilisiticBranchTransitions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Either Guarded Branches Or Probabilisitic Branch Transitions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Either Guarded Branches Or Probabilisitic Branch Transitions</em>' operation.
-	 * @see seff.BranchAction#EitherGuardedBranchesOrProbabilisiticBranchTransitions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getBranchAction__EitherGuardedBranchesOrProbabilisiticBranchTransitions__DiagnosticChain_Map();
-
-	/**
-	 * Returns the meta object for the '{@link seff.BranchAction#AllProbabilisticBranchProbabilitiesMustSumUpTo1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>All Probabilistic Branch Probabilities Must Sum Up To1</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>All Probabilistic Branch Probabilities Must Sum Up To1</em>' operation.
-	 * @see seff.BranchAction#AllProbabilisticBranchProbabilitiesMustSumUpTo1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getBranchAction__AllProbabilisticBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link seff.AbstractBranchTransition <em>Abstract Branch Transition</em>}'.
@@ -1630,30 +1313,6 @@ public interface SeffPackage extends EPackage {
 		EReference BEHAVIOUR__STEPS_BEHAVIOUR = eINSTANCE.getBehaviour_Steps_Behaviour();
 
 		/**
-		 * The meta object literal for the '<em><b>Exactly One Stop Action</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBehaviour__ExactlyOneStopAction__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>Exactly One Start Action</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBehaviour__ExactlyOneStartAction__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>Each Action Except Start Actionand Stop Action Must Hhave APredecessor And Successor</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBehaviour__EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link seff.impl.AbstractActionImpl <em>Abstract Action</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1708,14 +1367,6 @@ public interface SeffPackage extends EPackage {
 		EClass START_ACTION = eINSTANCE.getStartAction();
 
 		/**
-		 * The meta object literal for the '<em><b>Start Action Predecessor Must Not Be Defined</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation START_ACTION___START_ACTION_PREDECESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP = eINSTANCE.getStartAction__StartActionPredecessorMustNotBeDefined__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link seff.impl.StopActionImpl <em>Stop Action</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1726,14 +1377,6 @@ public interface SeffPackage extends EPackage {
 		EClass STOP_ACTION = eINSTANCE.getStopAction();
 
 		/**
-		 * The meta object literal for the '<em><b>Stop Action Successor Must Not Be Defined</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STOP_ACTION___STOP_ACTION_SUCCESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP = eINSTANCE.getStopAction__StopActionSuccessorMustNotBeDefined__DiagnosticChain_Map();
-
-		/**
 		 * The meta object literal for the '{@link seff.impl.InternalActionImpl <em>Internal Action</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1742,22 +1385,6 @@ public interface SeffPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_ACTION = eINSTANCE.getInternalAction();
-
-		/**
-		 * The meta object literal for the '<em><b>Multiple Internal Occurrence Descriptions Per Failure Type Not Allowed</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INTERNAL_ACTION___MULTIPLE_INTERNAL_OCCURRENCE_DESCRIPTIONS_PER_FAILURE_TYPE_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP = eINSTANCE.getInternalAction__MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>Sum Of Internal Action Failure Probabilities Must Not Exceed1</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INTERNAL_ACTION___SUM_OF_INTERNAL_ACTION_FAILURE_PROBABILITIES_MUST_NOT_EXCEED1__DIAGNOSTICCHAIN_MAP = eINSTANCE.getInternalAction__SumOfInternalActionFailureProbabilitiesMustNotExceed1__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link seff.impl.BranchActionImpl <em>Branch Action</em>}' class.
@@ -1776,22 +1403,6 @@ public interface SeffPackage extends EPackage {
 		 * @generated
 		 */
 		EReference BRANCH_ACTION__BRANCHES_BRANCH = eINSTANCE.getBranchAction_Branches_Branch();
-
-		/**
-		 * The meta object literal for the '<em><b>Either Guarded Branches Or Probabilisitic Branch Transitions</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation BRANCH_ACTION___EITHER_GUARDED_BRANCHES_OR_PROBABILISITIC_BRANCH_TRANSITIONS__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBranchAction__EitherGuardedBranchesOrProbabilisiticBranchTransitions__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '<em><b>All Probabilistic Branch Probabilities Must Sum Up To1</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation BRANCH_ACTION___ALL_PROBABILISTIC_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBranchAction__AllProbabilisticBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link seff.impl.AbstractBranchTransitionImpl <em>Abstract Branch Transition</em>}' class.

@@ -3,9 +3,6 @@
 package seff.impl;
 
 import de.uka.ipd.sdq.identifier.impl.IdentifierImpl;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -394,25 +391,6 @@ public class BehaviourImpl extends IdentifierImpl implements Behaviour {
 				return steps_Behaviour != null && !steps_Behaviour.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case SeffPackage.BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP:
-				return ExactlyOneStopAction((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case SeffPackage.BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP:
-				return ExactlyOneStartAction((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case SeffPackage.BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP:
-				return EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //BehaviourImpl

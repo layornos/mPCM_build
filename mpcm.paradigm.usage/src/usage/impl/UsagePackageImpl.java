@@ -225,36 +225,6 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getScenarioBehaviour__Exactlyonestart__DiagnosticChain_Map() {
-		return scenarioBehaviourEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getScenarioBehaviour__Exactlyonestop__DiagnosticChain_Map() {
-		return scenarioBehaviourEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getScenarioBehaviour__EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor__DiagnosticChain_Map() {
-		return scenarioBehaviourEClass.getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getAbstractUserAction() {
 		return abstractUserActionEClass;
 	}
@@ -305,28 +275,8 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStart__StartHasNoPredecessor__DiagnosticChain_Map() {
-		return startEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getStop() {
 		return stopEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getStop__StopHasNoSuccessor__DiagnosticChain_Map() {
-		return stopEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -347,16 +297,6 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 	@Override
 	public EReference getBranch_BranchTransitions_Branch() {
 		return (EReference)branchEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getBranch__AllBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map() {
-		return branchEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -482,9 +422,6 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 		createEReference(scenarioBehaviourEClass, SCENARIO_BEHAVIOUR__BRANCH_TRANSITION_SCENARIO_BEHAVIOUR);
 		createEReference(scenarioBehaviourEClass, SCENARIO_BEHAVIOUR__LOOP_SCENARIO_BEHAVIOUR);
 		createEReference(scenarioBehaviourEClass, SCENARIO_BEHAVIOUR__ACTIONS_SCENARIO_BEHAVIOUR);
-		createEOperation(scenarioBehaviourEClass, SCENARIO_BEHAVIOUR___EXACTLYONESTART__DIAGNOSTICCHAIN_MAP);
-		createEOperation(scenarioBehaviourEClass, SCENARIO_BEHAVIOUR___EXACTLYONESTOP__DIAGNOSTICCHAIN_MAP);
-		createEOperation(scenarioBehaviourEClass, SCENARIO_BEHAVIOUR___EACHUSERACTIONEXCEPT_STARTAND_STOPMUSTHAVEAPREDECESSORANDSUCCESSOR__DIAGNOSTICCHAIN_MAP);
 
 		abstractUserActionEClass = createEClass(ABSTRACT_USER_ACTION);
 		createEReference(abstractUserActionEClass, ABSTRACT_USER_ACTION__SUCCESSOR);
@@ -492,14 +429,11 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 		createEReference(abstractUserActionEClass, ABSTRACT_USER_ACTION__SCENARIO_BEHAVIOUR_ABSTRACT_USER_ACTION);
 
 		startEClass = createEClass(START);
-		createEOperation(startEClass, START___START_HAS_NO_PREDECESSOR__DIAGNOSTICCHAIN_MAP);
 
 		stopEClass = createEClass(STOP);
-		createEOperation(stopEClass, STOP___STOP_HAS_NO_SUCCESSOR__DIAGNOSTICCHAIN_MAP);
 
 		branchEClass = createEClass(BRANCH);
 		createEReference(branchEClass, BRANCH__BRANCH_TRANSITIONS_BRANCH);
-		createEOperation(branchEClass, BRANCH___ALL_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP);
 
 		branchTransitionEClass = createEClass(BRANCH_TRANSITION);
 		createEAttribute(branchTransitionEClass, BRANCH_TRANSITION__BRANCH_PROBABILITY);
@@ -554,13 +488,13 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 		loopEClass.getESuperTypes().add(this.getAbstractUserAction());
 		delayEClass.getESuperTypes().add(this.getAbstractUserAction());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(scenarioBehaviourEClass, ScenarioBehaviour.class, "ScenarioBehaviour", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getScenarioBehaviour_BranchTransition_ScenarioBehaviour(), this.getBranchTransition(), this.getBranchTransition_BranchedBehaviour_BranchTransition(), "branchTransition_ScenarioBehaviour", null, 0, 1, ScenarioBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getScenarioBehaviour_Loop_ScenarioBehaviour(), this.getLoop(), this.getLoop_BodyBehaviour_Loop(), "loop_ScenarioBehaviour", null, 0, 1, ScenarioBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getScenarioBehaviour_Actions_ScenarioBehaviour(), this.getAbstractUserAction(), this.getAbstractUserAction_ScenarioBehaviour_AbstractUserAction(), "actions_ScenarioBehaviour", null, 0, -1, ScenarioBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		EOperation op = initEOperation(getScenarioBehaviour__Exactlyonestart__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "Exactlyonestart", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(scenarioBehaviourEClass, ecorePackage.getEBoolean(), "Exactlyonestart", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -569,7 +503,7 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getScenarioBehaviour__Exactlyonestop__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "Exactlyonestop", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(scenarioBehaviourEClass, ecorePackage.getEBoolean(), "Exactlyonestop", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -578,7 +512,7 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getScenarioBehaviour__EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(scenarioBehaviourEClass, ecorePackage.getEBoolean(), "EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -594,7 +528,7 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 
 		initEClass(startEClass, Start.class, "Start", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getStart__StartHasNoPredecessor__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "StartHasNoPredecessor", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(startEClass, ecorePackage.getEBoolean(), "StartHasNoPredecessor", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -605,7 +539,7 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 
 		initEClass(stopEClass, Stop.class, "Stop", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getStop__StopHasNoSuccessor__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "StopHasNoSuccessor", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(stopEClass, ecorePackage.getEBoolean(), "StopHasNoSuccessor", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -617,7 +551,7 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 		initEClass(branchEClass, Branch.class, "Branch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBranch_BranchTransitions_Branch(), this.getBranchTransition(), this.getBranchTransition_Branch_BranchTransition(), "branchTransitions_Branch", null, 0, -1, Branch.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		op = initEOperation(getBranch__AllBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "AllBranchProbabilitiesMustSumUpTo1", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(branchEClass, ecorePackage.getEBoolean(), "AllBranchProbabilitiesMustSumUpTo1", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -655,37 +589,37 @@ public class UsagePackageImpl extends EPackageImpl implements UsagePackage {
 	protected void createGenModel_1Annotations() {
 		String source = "http://www.eclipse.org/uml2/1.1.0/GenModel";
 		addAnnotation
-		  (getScenarioBehaviour__Exactlyonestart__DiagnosticChain_Map(),
+		  (scenarioBehaviourEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.actions_ScenarioBehaviour->select(s|s.oclIsTypeOf(Start))->size() = 1"
 		   });
 		addAnnotation
-		  (getScenarioBehaviour__Exactlyonestop__DiagnosticChain_Map(),
+		  (scenarioBehaviourEClass.getEOperations().get(1),
 		   source,
 		   new String[] {
 			   "body", "self.actions_ScenarioBehaviour->select(s|s.oclIsTypeOf(Stop))->size() = 1"
 		   });
 		addAnnotation
-		  (getScenarioBehaviour__EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor__DiagnosticChain_Map(),
+		  (scenarioBehaviourEClass.getEOperations().get(2),
 		   source,
 		   new String[] {
 			   "body", "not self.actions_ScenarioBehaviour->select(s|not s.oclIsTypeOf(Start) and not s.oclIsTypeOf(Stop))->exists(a|a.oclAsType(AbstractUserAction).predecessor.oclIsUndefined()) and not self.actions_ScenarioBehaviour->select(s|not s.oclIsTypeOf(Start) and not s.oclIsTypeOf(Stop))->exists(a|a.oclAsType(AbstractUserAction).successor.oclIsUndefined())"
 		   });
 		addAnnotation
-		  (getStart__StartHasNoPredecessor__DiagnosticChain_Map(),
+		  (startEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.predecessor.oclIsUndefined()"
 		   });
 		addAnnotation
-		  (getStop__StopHasNoSuccessor__DiagnosticChain_Map(),
+		  (stopEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.successor.oclIsUndefined()"
 		   });
 		addAnnotation
-		  (getBranch__AllBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map(),
+		  (branchEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self->collect(branchTransitions_Branch.branchProbability)->sum() > 0.999 and self->collect(branchTransitions_Branch.branchProbability)->sum() <1.001"

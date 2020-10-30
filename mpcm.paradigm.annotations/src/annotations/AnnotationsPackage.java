@@ -5,7 +5,6 @@ package annotations;
 import base.BasePackage;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -16,7 +15,6 @@ import org.eclipse.emf.ecore.EReference;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
- *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
@@ -117,24 +115,6 @@ public interface AnnotationsPackage extends EPackage {
 	int ANNOTATION_ROOT_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
-	 * The operation id for the '<em>Multiple Reliability Annotations Per External Call Not Allowed</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATION_ROOT___MULTIPLE_RELIABILITY_ANNOTATIONS_PER_EXTERNAL_CALL_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP = BasePackage.ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Annotation Root</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATION_ROOT_OPERATION_COUNT = BasePackage.ENTITY_OPERATION_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link annotations.impl.ServicePropertyAnnotationImpl <em>Service Property Annotation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -179,15 +159,6 @@ public interface AnnotationsPackage extends EPackage {
 	 * @ordered
 	 */
 	int SERVICE_PROPERTY_ANNOTATION_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Service Property Annotation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SERVICE_PROPERTY_ANNOTATION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link annotations.impl.ServiceOutputParameterAbstractionImpl <em>Service Output Parameter Abstraction</em>}' class.
@@ -244,15 +215,6 @@ public interface AnnotationsPackage extends EPackage {
 	 */
 	int SERVICE_OUTPUT_PARAMETER_ABSTRACTION_FEATURE_COUNT = 4;
 
-	/**
-	 * The number of operations of the '<em>Service Output Parameter Abstraction</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SERVICE_OUTPUT_PARAMETER_ABSTRACTION_OPERATION_COUNT = 0;
-
 
 	/**
 	 * Returns the meta object for class '{@link annotations.AnnotationRoot <em>Annotation Root</em>}'.
@@ -285,16 +247,6 @@ public interface AnnotationsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getAnnotationRoot_SpecifiedQoSAnnotations_QoSAnnotations();
-
-	/**
-	 * Returns the meta object for the '{@link annotations.AnnotationRoot#MultipleReliabilityAnnotationsPerExternalCallNotAllowed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Multiple Reliability Annotations Per External Call Not Allowed</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Multiple Reliability Annotations Per External Call Not Allowed</em>' operation.
-	 * @see annotations.AnnotationRoot#MultipleReliabilityAnnotationsPerExternalCallNotAllowed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getAnnotationRoot__MultipleReliabilityAnnotationsPerExternalCallNotAllowed__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link annotations.ServicePropertyAnnotation <em>Service Property Annotation</em>}'.
@@ -408,7 +360,6 @@ public interface AnnotationsPackage extends EPackage {
 	 * <ul>
 	 *   <li>each class,</li>
 	 *   <li>each feature of each class,</li>
-	 *   <li>each operation of each class,</li>
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>
@@ -441,14 +392,6 @@ public interface AnnotationsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS = eINSTANCE.getAnnotationRoot_SpecifiedQoSAnnotations_QoSAnnotations();
-
-		/**
-		 * The meta object literal for the '<em><b>Multiple Reliability Annotations Per External Call Not Allowed</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ANNOTATION_ROOT___MULTIPLE_RELIABILITY_ANNOTATIONS_PER_EXTERNAL_CALL_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP = eINSTANCE.getAnnotationRoot__MultipleReliabilityAnnotationsPerExternalCallNotAllowed__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link annotations.impl.ServicePropertyAnnotationImpl <em>Service Property Annotation</em>}' class.

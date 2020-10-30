@@ -243,7 +243,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetQosAnnotations_SpecifiedOutputParameterAbstraction((AnnotationRoot)otherEnd, msgs);
 		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
+		return eDynamicInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,7 +259,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 			case AnnotationsPackage.SERVICE_OUTPUT_PARAMETER_ABSTRACTION__QOS_ANNOTATIONS_SPECIFIED_OUTPUT_PARAMETER_ABSTRACTION:
 				return basicSetQosAnnotations_SpecifiedOutputParameterAbstraction(null, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		return eDynamicInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -273,7 +273,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 			case AnnotationsPackage.SERVICE_OUTPUT_PARAMETER_ABSTRACTION__QOS_ANNOTATIONS_SPECIFIED_OUTPUT_PARAMETER_ABSTRACTION:
 				return eInternalContainer().eInverseRemove(this, AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_OUTPUT_PARAMETER_ABSTRACTIONS_QO_SANNOTATIONS, AnnotationRoot.class, msgs);
 		}
-		return super.eBasicRemoveFromContainerFeature(msgs);
+		return eDynamicBasicRemoveFromContainer(msgs);
 	}
 
 	/**
@@ -295,7 +295,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 			case AnnotationsPackage.SERVICE_OUTPUT_PARAMETER_ABSTRACTION__QOS_ANNOTATIONS_SPECIFIED_OUTPUT_PARAMETER_ABSTRACTION:
 				return getQosAnnotations_SpecifiedOutputParameterAbstraction();
 		}
-		return super.eGet(featureID, resolve, coreType);
+		return eDynamicGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -321,7 +321,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 				setQosAnnotations_SpecifiedOutputParameterAbstraction((AnnotationRoot)newValue);
 				return;
 		}
-		super.eSet(featureID, newValue);
+		eDynamicSet(featureID, newValue);
 	}
 
 	/**
@@ -345,7 +345,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 				setQosAnnotations_SpecifiedOutputParameterAbstraction((AnnotationRoot)null);
 				return;
 		}
-		super.eUnset(featureID);
+		eDynamicUnset(featureID);
 	}
 
 	/**
@@ -365,7 +365,7 @@ public abstract class ServiceOutputParameterAbstractionImpl extends MinimalEObje
 			case AnnotationsPackage.SERVICE_OUTPUT_PARAMETER_ABSTRACTION__QOS_ANNOTATIONS_SPECIFIED_OUTPUT_PARAMETER_ABSTRACTION:
 				return getQosAnnotations_SpecifiedOutputParameterAbstraction() != null;
 		}
-		return super.eIsSet(featureID);
+		return eDynamicIsSet(featureID);
 	}
 
 } //ServiceOutputParameterAbstractionImpl

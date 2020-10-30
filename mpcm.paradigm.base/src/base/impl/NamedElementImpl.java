@@ -99,7 +99,7 @@ public abstract class NamedElementImpl extends MinimalEObjectImpl.Container impl
 			case BasePackage.NAMED_ELEMENT__ENTITY_NAME:
 				return getEntityName();
 		}
-		return super.eGet(featureID, resolve, coreType);
+		return eDynamicGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -114,7 +114,7 @@ public abstract class NamedElementImpl extends MinimalEObjectImpl.Container impl
 				setEntityName((String)newValue);
 				return;
 		}
-		super.eSet(featureID, newValue);
+		eDynamicSet(featureID, newValue);
 	}
 
 	/**
@@ -129,7 +129,7 @@ public abstract class NamedElementImpl extends MinimalEObjectImpl.Container impl
 				setEntityName(ENTITY_NAME_EDEFAULT);
 				return;
 		}
-		super.eUnset(featureID);
+		eDynamicUnset(featureID);
 	}
 
 	/**
@@ -143,7 +143,7 @@ public abstract class NamedElementImpl extends MinimalEObjectImpl.Container impl
 			case BasePackage.NAMED_ELEMENT__ENTITY_NAME:
 				return ENTITY_NAME_EDEFAULT == null ? entityName != null : !ENTITY_NAME_EDEFAULT.equals(entityName);
 		}
-		return super.eIsSet(featureID);
+		return eDynamicIsSet(featureID);
 	}
 
 	/**

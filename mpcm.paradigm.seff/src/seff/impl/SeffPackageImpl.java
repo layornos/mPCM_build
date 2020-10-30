@@ -264,36 +264,6 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getBehaviour__ExactlyOneStopAction__DiagnosticChain_Map() {
-		return behaviourEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getBehaviour__ExactlyOneStartAction__DiagnosticChain_Map() {
-		return behaviourEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getBehaviour__EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor__DiagnosticChain_Map() {
-		return behaviourEClass.getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getAbstractAction() {
 		return abstractActionEClass;
 	}
@@ -354,16 +324,6 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStartAction__StartActionPredecessorMustNotBeDefined__DiagnosticChain_Map() {
-		return startActionEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getStopAction() {
 		return stopActionEClass;
 	}
@@ -374,38 +334,8 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStopAction__StopActionSuccessorMustNotBeDefined__DiagnosticChain_Map() {
-		return stopActionEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalAction() {
 		return internalActionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalAction__MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed__DiagnosticChain_Map() {
-		return internalActionEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalAction__SumOfInternalActionFailureProbabilitiesMustNotExceed1__DiagnosticChain_Map() {
-		return internalActionEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -426,26 +356,6 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 	@Override
 	public EReference getBranchAction_Branches_Branch() {
 		return (EReference)branchActionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getBranchAction__EitherGuardedBranchesOrProbabilisiticBranchTransitions__DiagnosticChain_Map() {
-		return branchActionEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getBranchAction__AllProbabilisticBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map() {
-		return branchActionEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -651,9 +561,6 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		createEReference(behaviourEClass, BEHAVIOUR__ABSTRACT_LOOP_ACTION_RESOURCE_DEMANDING_BEHAVIOUR);
 		createEReference(behaviourEClass, BEHAVIOUR__ABSTRACT_BRANCH_TRANSITION_RESOURCE_DEMANDING_BEHAVIOUR);
 		createEReference(behaviourEClass, BEHAVIOUR__STEPS_BEHAVIOUR);
-		createEOperation(behaviourEClass, BEHAVIOUR___EXACTLY_ONE_STOP_ACTION__DIAGNOSTICCHAIN_MAP);
-		createEOperation(behaviourEClass, BEHAVIOUR___EXACTLY_ONE_START_ACTION__DIAGNOSTICCHAIN_MAP);
-		createEOperation(behaviourEClass, BEHAVIOUR___EACH_ACTION_EXCEPT_START_ACTIONAND_STOP_ACTION_MUST_HHAVE_APREDECESSOR_AND_SUCCESSOR__DIAGNOSTICCHAIN_MAP);
 
 		abstractActionEClass = createEClass(ABSTRACT_ACTION);
 		createEReference(abstractActionEClass, ABSTRACT_ACTION__PREDECESSOR_ABSTRACT_ACTION);
@@ -663,19 +570,13 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		abstractInternalControlFlowActionEClass = createEClass(ABSTRACT_INTERNAL_CONTROL_FLOW_ACTION);
 
 		startActionEClass = createEClass(START_ACTION);
-		createEOperation(startActionEClass, START_ACTION___START_ACTION_PREDECESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP);
 
 		stopActionEClass = createEClass(STOP_ACTION);
-		createEOperation(stopActionEClass, STOP_ACTION___STOP_ACTION_SUCCESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP);
 
 		internalActionEClass = createEClass(INTERNAL_ACTION);
-		createEOperation(internalActionEClass, INTERNAL_ACTION___MULTIPLE_INTERNAL_OCCURRENCE_DESCRIPTIONS_PER_FAILURE_TYPE_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP);
-		createEOperation(internalActionEClass, INTERNAL_ACTION___SUM_OF_INTERNAL_ACTION_FAILURE_PROBABILITIES_MUST_NOT_EXCEED1__DIAGNOSTICCHAIN_MAP);
 
 		branchActionEClass = createEClass(BRANCH_ACTION);
 		createEReference(branchActionEClass, BRANCH_ACTION__BRANCHES_BRANCH);
-		createEOperation(branchActionEClass, BRANCH_ACTION___EITHER_GUARDED_BRANCHES_OR_PROBABILISITIC_BRANCH_TRANSITIONS__DIAGNOSTICCHAIN_MAP);
-		createEOperation(branchActionEClass, BRANCH_ACTION___ALL_PROBABILISTIC_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP);
 
 		abstractBranchTransitionEClass = createEClass(ABSTRACT_BRANCH_TRANSITION);
 		createEReference(abstractBranchTransitionEClass, ABSTRACT_BRANCH_TRANSITION__BRANCH_ACTION_ABSTRACT_BRANCH_TRANSITION);
@@ -748,13 +649,13 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		abstractLoopActionEClass.getESuperTypes().add(this.getAbstractInternalControlFlowAction());
 		loopActionEClass.getESuperTypes().add(this.getAbstractLoopAction());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(behaviourEClass, Behaviour.class, "Behaviour", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBehaviour_AbstractLoopAction_ResourceDemandingBehaviour(), this.getAbstractLoopAction(), this.getAbstractLoopAction_BodyBehaviour_Loop(), "abstractLoopAction_ResourceDemandingBehaviour", null, 0, 1, Behaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getBehaviour_AbstractBranchTransition_ResourceDemandingBehaviour(), this.getAbstractBranchTransition(), this.getAbstractBranchTransition_BranchBehaviour_BranchTransition(), "abstractBranchTransition_ResourceDemandingBehaviour", null, 0, 1, Behaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getBehaviour_Steps_Behaviour(), this.getAbstractAction(), this.getAbstractAction_ResourceDemandingBehaviour_AbstractAction(), "steps_Behaviour", null, 0, -1, Behaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		EOperation op = initEOperation(getBehaviour__ExactlyOneStopAction__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "ExactlyOneStopAction", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(behaviourEClass, ecorePackage.getEBoolean(), "ExactlyOneStopAction", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -763,7 +664,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getBehaviour__ExactlyOneStartAction__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "ExactlyOneStartAction", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(behaviourEClass, ecorePackage.getEBoolean(), "ExactlyOneStartAction", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -772,7 +673,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getBehaviour__EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(behaviourEClass, ecorePackage.getEBoolean(), "EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -790,7 +691,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 
 		initEClass(startActionEClass, StartAction.class, "StartAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getStartAction__StartActionPredecessorMustNotBeDefined__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "StartActionPredecessorMustNotBeDefined", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(startActionEClass, ecorePackage.getEBoolean(), "StartActionPredecessorMustNotBeDefined", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -801,7 +702,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 
 		initEClass(stopActionEClass, StopAction.class, "StopAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getStopAction__StopActionSuccessorMustNotBeDefined__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "StopActionSuccessorMustNotBeDefined", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(stopActionEClass, ecorePackage.getEBoolean(), "StopActionSuccessorMustNotBeDefined", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -812,7 +713,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 
 		initEClass(internalActionEClass, InternalAction.class, "InternalAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getInternalAction__MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(internalActionEClass, ecorePackage.getEBoolean(), "MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -821,7 +722,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getInternalAction__SumOfInternalActionFailureProbabilitiesMustNotExceed1__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "SumOfInternalActionFailureProbabilitiesMustNotExceed1", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(internalActionEClass, ecorePackage.getEBoolean(), "SumOfInternalActionFailureProbabilitiesMustNotExceed1", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -833,7 +734,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		initEClass(branchActionEClass, BranchAction.class, "BranchAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBranchAction_Branches_Branch(), this.getAbstractBranchTransition(), this.getAbstractBranchTransition_BranchAction_AbstractBranchTransition(), "branches_Branch", null, 0, -1, BranchAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		op = initEOperation(getBranchAction__EitherGuardedBranchesOrProbabilisiticBranchTransitions__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "EitherGuardedBranchesOrProbabilisiticBranchTransitions", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(branchActionEClass, ecorePackage.getEBoolean(), "EitherGuardedBranchesOrProbabilisiticBranchTransitions", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -842,7 +743,7 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getBranchAction__AllProbabilisticBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "AllProbabilisticBranchProbabilitiesMustSumUpTo1", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(branchActionEClass, ecorePackage.getEBoolean(), "AllProbabilisticBranchProbabilitiesMustSumUpTo1", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -891,55 +792,55 @@ public class SeffPackageImpl extends EPackageImpl implements SeffPackage {
 	protected void createGenModel_1Annotations() {
 		String source = "http://www.eclipse.org/uml2/1.1.0/GenModel";
 		addAnnotation
-		  (getBehaviour__ExactlyOneStopAction__DiagnosticChain_Map(),
+		  (behaviourEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.steps_Behaviour->select(s|s.oclIsTypeOf(StopAction))->size() = 1"
 		   });
 		addAnnotation
-		  (getBehaviour__ExactlyOneStartAction__DiagnosticChain_Map(),
+		  (behaviourEClass.getEOperations().get(1),
 		   source,
 		   new String[] {
 			   "body", "self.steps_Behaviour->select(s|s.oclIsTypeOf(StartAction))->size() = 1"
 		   });
 		addAnnotation
-		  (getBehaviour__EachActionExceptStartActionandStopActionMustHhaveAPredecessorAndSuccessor__DiagnosticChain_Map(),
+		  (behaviourEClass.getEOperations().get(2),
 		   source,
 		   new String[] {
 			   "body", "not self.steps_Behaviour->select(s|not s.oclIsTypeOf(StartAction) and not s.oclIsTypeOf(StopAction))->exists(a|a.oclAsType(AbstractAction).predecessor_AbstractAction.oclIsUndefined()) and not self.steps_Behaviour->select(s|not s.oclIsTypeOf(StartAction) and not s.oclIsTypeOf(StopAction))->exists(a|a.oclAsType(AbstractAction).successor_AbstractAction.oclIsUndefined())"
 		   });
 		addAnnotation
-		  (getStartAction__StartActionPredecessorMustNotBeDefined__DiagnosticChain_Map(),
+		  (startActionEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.predecessor_AbstractAction.oclIsUndefined()"
 		   });
 		addAnnotation
-		  (getStopAction__StopActionSuccessorMustNotBeDefined__DiagnosticChain_Map(),
+		  (stopActionEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.successor_AbstractAction.oclIsUndefined()"
 		   });
 		addAnnotation
-		  (getInternalAction__MultipleInternalOccurrenceDescriptionsPerFailureTypeNotAllowed__DiagnosticChain_Map(),
+		  (internalActionEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.internalFailureOccurrenceDescriptions__InternalAction->forAll(x:mpcm::reliability::InternalFailureOccurrenceDescription,y:mpcm::reliability::InternalFailureOccurrenceDescription  | x<>y implies x.softwareInducedFailureType__InternalFailureOccurrenceDescription <> y.softwareInducedFailureType__InternalFailureOccurrenceDescription )\r\n"
 		   });
 		addAnnotation
-		  (getInternalAction__SumOfInternalActionFailureProbabilitiesMustNotExceed1__DiagnosticChain_Map(),
+		  (internalActionEClass.getEOperations().get(1),
 		   source,
 		   new String[] {
 			   "body", "self.internalFailureOccurrenceDescriptions__InternalAction.failureProbability.oclAsType(Real)->sum()<=1.0\r\n"
 		   });
 		addAnnotation
-		  (getBranchAction__EitherGuardedBranchesOrProbabilisiticBranchTransitions__DiagnosticChain_Map(),
+		  (branchActionEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.branches_Branch->forAll(bt|bt.oclIsTypeOf(ProbabilisticBranchTransition)) \r\nor self.branches_Branch->forAll(bt|bt.oclIsTypeOf(GuardedBranchTransition))"
 		   });
 		addAnnotation
-		  (getBranchAction__AllProbabilisticBranchProbabilitiesMustSumUpTo1__DiagnosticChain_Map(),
+		  (branchActionEClass.getEOperations().get(1),
 		   source,
 		   new String[] {
 			   "body", "if self.branches_Branch->forAll(oclIsTypeOf(ProbabilisticBranchTransition)) then \r\n\tself.branches_Branch->select(pbt|pbt.oclIsTypeOf(ProbabilisticBranchTransition))->collect(pbt|pbt.oclAsType(ProbabilisticBranchTransition).branchProbability)->sum() > 0.9999 \r\n\tand self.branches_Branch->select(pbt|pbt.oclIsTypeOf(ProbabilisticBranchTransition))->collect(pbt|pbt.oclAsType(ProbabilisticBranchTransition).branchProbability)->sum() < 1.0001 \r\n\telse true \r\nendif"

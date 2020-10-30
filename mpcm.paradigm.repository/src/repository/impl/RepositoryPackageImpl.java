@@ -276,16 +276,6 @@ public class RepositoryPackageImpl extends EPackageImpl implements RepositoryPac
 	 * @generated
 	 */
 	@Override
-	public EOperation getInterface__NoProtocolTypeIDUsedTwice__DiagnosticChain_Map() {
-		return interfaceEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getProtocol() {
 		return protocolEClass;
 	}
@@ -543,7 +533,6 @@ public class RepositoryPackageImpl extends EPackageImpl implements RepositoryPac
 		createEReference(interfaceEClass, INTERFACE__PARENT_INTERFACES_INTERFACE);
 		createEReference(interfaceEClass, INTERFACE__PROTOCOLS_INTERFACE);
 		createEReference(interfaceEClass, INTERFACE__REQUIRED_CHARACTERISATIONS);
-		createEOperation(interfaceEClass, INTERFACE___NO_PROTOCOL_TYPE_ID_USED_TWICE__DIAGNOSTICCHAIN_MAP);
 
 		protocolEClass = createEClass(PROTOCOL);
 		createEAttribute(protocolEClass, PROTOCOL__PROTOCOL_TYPE_ID);
@@ -629,13 +618,13 @@ public class RepositoryPackageImpl extends EPackageImpl implements RepositoryPac
 		interfaceProvidingRequiringEntityEClass.getESuperTypes().add(this.getInterfaceRequiringEntity());
 		repositoryComponentEClass.getESuperTypes().add(this.getInterfaceProvidingRequiringEntity());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(interfaceEClass, Interface.class, "Interface", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInterface_ParentInterfaces__Interface(), this.getInterface(), null, "parentInterfaces__Interface", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInterface_Protocols__Interface(), this.getProtocol(), null, "protocols__Interface", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInterface_RequiredCharacterisations(), this.getRequiredCharacterisation(), this.getRequiredCharacterisation_Interface_RequiredCharacterisation(), "requiredCharacterisations", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		EOperation op = initEOperation(getInterface__NoProtocolTypeIDUsedTwice__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "NoProtocolTypeIDUsedTwice", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(interfaceEClass, ecorePackage.getEBoolean(), "NoProtocolTypeIDUsedTwice", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -701,7 +690,7 @@ public class RepositoryPackageImpl extends EPackageImpl implements RepositoryPac
 	protected void createGenModel_1Annotations() {
 		String source = "http://www.eclipse.org/uml2/1.1.0/GenModel";
 		addAnnotation
-		  (getInterface__NoProtocolTypeIDUsedTwice__DiagnosticChain_Map(),
+		  (interfaceEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.protocols__Interface->forAll(p1, p2 |\r\np1.protocolTypeID <> p2.protocolTypeID)\r\n"

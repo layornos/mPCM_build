@@ -7,7 +7,6 @@ import de.uka.ipd.sdq.stoex.StoexPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -105,15 +104,6 @@ public interface VariablesPackage extends EPackage {
 	int VARIABLE_USAGE_FEATURE_COUNT = 2;
 
 	/**
-	 * The number of operations of the '<em>Variable Usage</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VARIABLE_USAGE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link variables.impl.VariableCharacterisationImpl <em>Variable Characterisation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -160,15 +150,6 @@ public interface VariablesPackage extends EPackage {
 	int VARIABLE_CHARACTERISATION_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Variable Characterisation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VARIABLE_CHARACTERISATION_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link variables.impl.CharacterisedVariableImpl <em>Characterised Variable</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -206,15 +187,6 @@ public interface VariablesPackage extends EPackage {
 	int CHARACTERISED_VARIABLE_FEATURE_COUNT = StoexPackage.VARIABLE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Characterised Variable</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHARACTERISED_VARIABLE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link variables.impl.PCMRandomVariableImpl <em>PCM Random Variable</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -250,24 +222,6 @@ public interface VariablesPackage extends EPackage {
 	 * @ordered
 	 */
 	int PCM_RANDOM_VARIABLE_FEATURE_COUNT = StoexPackage.RANDOM_VARIABLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Specification Must Not Be NULL</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PCM_RANDOM_VARIABLE___SPECIFICATION_MUST_NOT_BE_NULL__DIAGNOSTICCHAIN_MAP = 0;
-
-	/**
-	 * The number of operations of the '<em>PCM Random Variable</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PCM_RANDOM_VARIABLE_OPERATION_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link variables.VariableCharacterisationType <em>Variable Characterisation Type</em>}' enum.
@@ -385,16 +339,6 @@ public interface VariablesPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPCMRandomVariable();
-
-	/**
-	 * Returns the meta object for the '{@link variables.PCMRandomVariable#SpecificationMustNotBeNULL(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Specification Must Not Be NULL</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Specification Must Not Be NULL</em>' operation.
-	 * @see variables.PCMRandomVariable#SpecificationMustNotBeNULL(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	EOperation getPCMRandomVariable__SpecificationMustNotBeNULL__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for enum '{@link variables.VariableCharacterisationType <em>Variable Characterisation Type</em>}'.
@@ -516,14 +460,6 @@ public interface VariablesPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PCM_RANDOM_VARIABLE = eINSTANCE.getPCMRandomVariable();
-
-		/**
-		 * The meta object literal for the '<em><b>Specification Must Not Be NULL</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation PCM_RANDOM_VARIABLE___SPECIFICATION_MUST_NOT_BE_NULL__DIAGNOSTICCHAIN_MAP = eINSTANCE.getPCMRandomVariable__SpecificationMustNotBeNULL__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link variables.VariableCharacterisationType <em>Variable Characterisation Type</em>}' enum.

@@ -6,7 +6,7 @@
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     editPluginID="mpcm.paradigm.behaviour.seff.edit" editorPluginID="mpcm.paradigm.behaviour.seff.editor"
     usedGenPackages="../../mpcm.paradigm.base/model/base.genmodel#//base ../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units ../../mpcm.paradigm.variables/model/variables.genmodel#//variables"
-    operationReflection="true" importOrganizing="true">
+    importOrganizing="true">
   <foreignModel>seff.ecore</foreignModel>
   <genPackages prefix="Seff" disposableProviderFactory="true" ecorePackage="seff.ecore#/">
     <genClasses ecoreClass="seff.ecore#//Behaviour">

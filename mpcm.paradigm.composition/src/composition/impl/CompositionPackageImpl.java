@@ -201,38 +201,8 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 	 * @generated
 	 */
 	@Override
-	public EOperation getComposedStructure__MultipleConnectorsConstraint__DiagnosticChain_Map() {
-		return composedStructureEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getComposedStructure__MultipleConnectorsConstraintForAssemblyConnectors__DiagnosticChain_Map() {
-		return composedStructureEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getComposedProvidingRequiringEntity() {
 		return composedProvidingRequiringEntityEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getComposedProvidingRequiringEntity__ProvidedRolesMustBeBound__DiagnosticChain_Map() {
-		return composedProvidingRequiringEntityEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -338,11 +308,8 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 
 		composedStructureEClass = createEClass(COMPOSED_STRUCTURE);
 		createEReference(composedStructureEClass, COMPOSED_STRUCTURE__CONTENT);
-		createEOperation(composedStructureEClass, COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
-		createEOperation(composedStructureEClass, COMPOSED_STRUCTURE___MULTIPLE_CONNECTORS_CONSTRAINT_FOR_ASSEMBLY_CONNECTORS__DIAGNOSTICCHAIN_MAP);
 
 		composedProvidingRequiringEntityEClass = createEClass(COMPOSED_PROVIDING_REQUIRING_ENTITY);
-		createEOperation(composedProvidingRequiringEntityEClass, COMPOSED_PROVIDING_REQUIRING_ENTITY___PROVIDED_ROLES_MUST_BE_BOUND__DIAGNOSTICCHAIN_MAP);
 
 		assemblyContextEClass = createEClass(ASSEMBLY_CONTEXT);
 		createEReference(assemblyContextEClass, ASSEMBLY_CONTEXT__PARENT_STRUCTURE_ASSEMBLY_CONTEXT);
@@ -397,13 +364,13 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 		connectorEClass.getESuperTypes().add(this.getContainable());
 		delegationConnectorEClass.getESuperTypes().add(this.getConnector());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(containableEClass, Containable.class, "Containable", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(composedStructureEClass, ComposedStructure.class, "ComposedStructure", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getComposedStructure_Content(), this.getContainable(), null, "content", null, 0, -1, ComposedStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		EOperation op = initEOperation(getComposedStructure__MultipleConnectorsConstraint__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "MultipleConnectorsConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(composedStructureEClass, ecorePackage.getEBoolean(), "MultipleConnectorsConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -412,7 +379,7 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getComposedStructure__MultipleConnectorsConstraintForAssemblyConnectors__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "MultipleConnectorsConstraintForAssemblyConnectors", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(composedStructureEClass, ecorePackage.getEBoolean(), "MultipleConnectorsConstraintForAssemblyConnectors", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -423,7 +390,7 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 
 		initEClass(composedProvidingRequiringEntityEClass, ComposedProvidingRequiringEntity.class, "ComposedProvidingRequiringEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getComposedProvidingRequiringEntity__ProvidedRolesMustBeBound__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "ProvidedRolesMustBeBound", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(composedProvidingRequiringEntityEClass, ecorePackage.getEBoolean(), "ProvidedRolesMustBeBound", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -459,19 +426,19 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 	protected void createGenModel_1Annotations() {
 		String source = "http://www.eclipse.org/uml2/1.1.0/GenModel";
 		addAnnotation
-		  (getComposedStructure__MultipleConnectorsConstraint__DiagnosticChain_Map(),
+		  (composedStructureEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.connectors__ComposedStructure->select(conn | conn.oclIsTypeOf(mpcm::core::composition::ProvidedDelegationConnector)).oclAsType(mpcm::core::composition::ProvidedDelegationConnector)->forAll( c1, c2 | c1 <> c2 implies c1.outerProvidedRole_ProvidedDelegationConnector <> c2.outerProvidedRole_ProvidedDelegationConnector)\r\n"
 		   });
 		addAnnotation
-		  (getComposedStructure__MultipleConnectorsConstraintForAssemblyConnectors__DiagnosticChain_Map(),
+		  (composedStructureEClass.getEOperations().get(1),
 		   source,
 		   new String[] {
 			   "body", "self.connectors__ComposedStructure->select(conn | conn.oclIsTypeOf(mpcm::core::composition::AssemblyConnector)).oclAsType(AssemblyConnector)->forAll( c1, c2 | ( (c1 <> c2) and ( c1.requiringAssemblyContext_AssemblyConnector = c2.requiringAssemblyContext_AssemblyConnector ) ) implies c1.requiredRole_AssemblyConnector <> c2.requiredRole_AssemblyConnector )\r\n"
 		   });
 		addAnnotation
-		  (getComposedProvidingRequiringEntity__ProvidedRolesMustBeBound__DiagnosticChain_Map(),
+		  (composedProvidingRequiringEntityEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.providedRoles_InterfaceProvidingEntity->forAll(role|self.connectors__ComposedStructure->select(conn | conn.oclIsTypeOf(mpcm::core::composition::ProvidedDelegationConnector)).oclAsType(mpcm::core::composition::ProvidedDelegationConnector)->exists(connector|connector.outerProvidedRole_ProvidedDelegationConnector = role))\r\n\r\n"

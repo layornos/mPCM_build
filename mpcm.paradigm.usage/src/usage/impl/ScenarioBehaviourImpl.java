@@ -3,9 +3,6 @@
 package usage.impl;
 
 import base.impl.EntityImpl;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -394,25 +391,6 @@ public class ScenarioBehaviourImpl extends EntityImpl implements ScenarioBehavio
 				return actions_ScenarioBehaviour != null && !actions_ScenarioBehaviour.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case UsagePackage.SCENARIO_BEHAVIOUR___EXACTLYONESTART__DIAGNOSTICCHAIN_MAP:
-				return Exactlyonestart((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case UsagePackage.SCENARIO_BEHAVIOUR___EXACTLYONESTOP__DIAGNOSTICCHAIN_MAP:
-				return Exactlyonestop((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case UsagePackage.SCENARIO_BEHAVIOUR___EACHUSERACTIONEXCEPT_STARTAND_STOPMUSTHAVEAPREDECESSORANDSUCCESSOR__DIAGNOSTICCHAIN_MAP:
-				return EachuseractionexceptStartandStopmusthaveapredecessorandsuccessor((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //ScenarioBehaviourImpl

@@ -2,8 +2,6 @@
  */
 package usage.impl;
 
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -198,21 +196,6 @@ public class BranchImpl extends AbstractUserActionImpl implements Branch {
 				return branchTransitions_Branch != null && !branchTransitions_Branch.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case UsagePackage.BRANCH___ALL_BRANCH_PROBABILITIES_MUST_SUM_UP_TO1__DIAGNOSTICCHAIN_MAP:
-				return AllBranchProbabilitiesMustSumUpTo1((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //BranchImpl

@@ -86,15 +86,6 @@ public interface BasePackage extends EPackage {
 	int NAMED_ELEMENT_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Named Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ELEMENT_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.EntityImpl <em>Entity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -132,15 +123,6 @@ public interface BasePackage extends EPackage {
 	int ENTITY_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENTITY_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.DummyClassImpl <em>Dummy Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -158,16 +140,6 @@ public interface BasePackage extends EPackage {
 	 * @ordered
 	 */
 	int DUMMY_CLASS_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Dummy Class</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DUMMY_CLASS_OPERATION_COUNT = 0;
-
 
 	/**
 	 * Returns the meta object for class '{@link base.NamedElement <em>Named Element</em>}'.

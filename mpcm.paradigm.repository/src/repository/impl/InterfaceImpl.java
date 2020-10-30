@@ -3,9 +3,6 @@
 package repository.impl;
 
 import base.impl.EntityImpl;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -275,21 +272,6 @@ public abstract class InterfaceImpl extends EntityImpl implements Interface {
 				return requiredCharacterisations != null && !requiredCharacterisations.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case RepositoryPackage.INTERFACE___NO_PROTOCOL_TYPE_ID_USED_TWICE__DIAGNOSTICCHAIN_MAP:
-				return NoProtocolTypeIDUsedTwice((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //InterfaceImpl

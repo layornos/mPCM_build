@@ -177,16 +177,6 @@ public class AnnotationsPackageImpl extends EPackageImpl implements AnnotationsP
 	 * @generated
 	 */
 	@Override
-	public EOperation getAnnotationRoot__MultipleReliabilityAnnotationsPerExternalCallNotAllowed__DiagnosticChain_Map() {
-		return annotationRootEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getServicePropertyAnnotation() {
 		return servicePropertyAnnotationEClass;
 	}
@@ -303,7 +293,6 @@ public class AnnotationsPackageImpl extends EPackageImpl implements AnnotationsP
 		annotationRootEClass = createEClass(ANNOTATION_ROOT);
 		createEReference(annotationRootEClass, ANNOTATION_ROOT__SPECIFIED_OUTPUT_PARAMETER_ABSTRACTIONS_QO_SANNOTATIONS);
 		createEReference(annotationRootEClass, ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS);
-		createEOperation(annotationRootEClass, ANNOTATION_ROOT___MULTIPLE_RELIABILITY_ANNOTATIONS_PER_EXTERNAL_CALL_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP);
 
 		servicePropertyAnnotationEClass = createEClass(SERVICE_PROPERTY_ANNOTATION);
 		createEReference(servicePropertyAnnotationEClass, SERVICE_PROPERTY_ANNOTATION__SIGNATURE_SPECIFIED_QO_SANNATION);
@@ -352,12 +341,12 @@ public class AnnotationsPackageImpl extends EPackageImpl implements AnnotationsP
 		// Add supertypes to classes
 		annotationRootEClass.getESuperTypes().add(theBasePackage.getEntity());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(annotationRootEClass, AnnotationRoot.class, "AnnotationRoot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAnnotationRoot_SpecifiedOutputParameterAbstractions_QoSAnnotations(), this.getServiceOutputParameterAbstraction(), this.getServiceOutputParameterAbstraction_QosAnnotations_SpecifiedOutputParameterAbstraction(), "specifiedOutputParameterAbstractions_QoSAnnotations", null, 0, -1, AnnotationRoot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAnnotationRoot_SpecifiedQoSAnnotations_QoSAnnotations(), this.getServicePropertyAnnotation(), this.getServicePropertyAnnotation_QosAnnotations_SpecifiedQoSAnnotation(), "specifiedQoSAnnotations_QoSAnnotations", null, 0, -1, AnnotationRoot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		EOperation op = initEOperation(getAnnotationRoot__MultipleReliabilityAnnotationsPerExternalCallNotAllowed__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "MultipleReliabilityAnnotationsPerExternalCallNotAllowed", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(annotationRootEClass, ecorePackage.getEBoolean(), "MultipleReliabilityAnnotationsPerExternalCallNotAllowed", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -394,7 +383,7 @@ public class AnnotationsPackageImpl extends EPackageImpl implements AnnotationsP
 	protected void createGenModel_1Annotations() {
 		String source = "http://www.eclipse.org/uml2/1.1.0/GenModel";
 		addAnnotation
-		  (getAnnotationRoot__MultipleReliabilityAnnotationsPerExternalCallNotAllowed__DiagnosticChain_Map(),
+		  (annotationRootEClass.getEOperations().get(0),
 		   source,
 		   new String[] {
 			   "body", "self.specifiedQoSAnnotations_QoSAnnotations->select(oclIsTypeOf(mpcm::qosannotations::qos_reliability::SpecifiedReliabilityAnnotation))->forAll( x, y | ( x<>y ) implies ( ( x.role_SpecifiedQoSAnnotation <> y.role_SpecifiedQoSAnnotation )  or ( x.signature_SpecifiedQoSAnnation <> y.signature_SpecifiedQoSAnnation ) ) )"

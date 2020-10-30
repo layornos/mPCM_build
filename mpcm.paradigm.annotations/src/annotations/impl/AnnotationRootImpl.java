@@ -10,9 +10,6 @@ import annotations.ServicePropertyAnnotation;
 import annotations.util.AnnotationsValidator;
 
 import base.impl.EntityImpl;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -152,7 +149,7 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSpecifiedQoSAnnotations_QoSAnnotations()).basicAdd(otherEnd, msgs);
 		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
+		return eDynamicInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -168,7 +165,7 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS:
 				return ((InternalEList<?>)getSpecifiedQoSAnnotations_QoSAnnotations()).basicRemove(otherEnd, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		return eDynamicInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -179,12 +176,16 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case AnnotationsPackage.ANNOTATION_ROOT__ID:
+				return getId();
+			case AnnotationsPackage.ANNOTATION_ROOT__ENTITY_NAME:
+				return getEntityName();
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_OUTPUT_PARAMETER_ABSTRACTIONS_QO_SANNOTATIONS:
 				return getSpecifiedOutputParameterAbstractions_QoSAnnotations();
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS:
 				return getSpecifiedQoSAnnotations_QoSAnnotations();
 		}
-		return super.eGet(featureID, resolve, coreType);
+		return eDynamicGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -196,6 +197,12 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case AnnotationsPackage.ANNOTATION_ROOT__ID:
+				setId((String)newValue);
+				return;
+			case AnnotationsPackage.ANNOTATION_ROOT__ENTITY_NAME:
+				setEntityName((String)newValue);
+				return;
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_OUTPUT_PARAMETER_ABSTRACTIONS_QO_SANNOTATIONS:
 				getSpecifiedOutputParameterAbstractions_QoSAnnotations().clear();
 				getSpecifiedOutputParameterAbstractions_QoSAnnotations().addAll((Collection<? extends ServiceOutputParameterAbstraction>)newValue);
@@ -205,7 +212,7 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 				getSpecifiedQoSAnnotations_QoSAnnotations().addAll((Collection<? extends ServicePropertyAnnotation>)newValue);
 				return;
 		}
-		super.eSet(featureID, newValue);
+		eDynamicSet(featureID, newValue);
 	}
 
 	/**
@@ -216,6 +223,12 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case AnnotationsPackage.ANNOTATION_ROOT__ID:
+				setId(ID_EDEFAULT);
+				return;
+			case AnnotationsPackage.ANNOTATION_ROOT__ENTITY_NAME:
+				setEntityName(ENTITY_NAME_EDEFAULT);
+				return;
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_OUTPUT_PARAMETER_ABSTRACTIONS_QO_SANNOTATIONS:
 				getSpecifiedOutputParameterAbstractions_QoSAnnotations().clear();
 				return;
@@ -223,7 +236,7 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 				getSpecifiedQoSAnnotations_QoSAnnotations().clear();
 				return;
 		}
-		super.eUnset(featureID);
+		eDynamicUnset(featureID);
 	}
 
 	/**
@@ -234,27 +247,16 @@ public class AnnotationRootImpl extends EntityImpl implements AnnotationRoot {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case AnnotationsPackage.ANNOTATION_ROOT__ID:
+				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
+			case AnnotationsPackage.ANNOTATION_ROOT__ENTITY_NAME:
+				return ENTITY_NAME_EDEFAULT == null ? entityName != null : !ENTITY_NAME_EDEFAULT.equals(entityName);
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_OUTPUT_PARAMETER_ABSTRACTIONS_QO_SANNOTATIONS:
 				return specifiedOutputParameterAbstractions_QoSAnnotations != null && !specifiedOutputParameterAbstractions_QoSAnnotations.isEmpty();
 			case AnnotationsPackage.ANNOTATION_ROOT__SPECIFIED_QO_SANNOTATIONS_QO_SANNOTATIONS:
 				return specifiedQoSAnnotations_QoSAnnotations != null && !specifiedQoSAnnotations_QoSAnnotations.isEmpty();
 		}
-		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case AnnotationsPackage.ANNOTATION_ROOT___MULTIPLE_RELIABILITY_ANNOTATIONS_PER_EXTERNAL_CALL_NOT_ALLOWED__DIAGNOSTICCHAIN_MAP:
-				return MultipleReliabilityAnnotationsPerExternalCallNotAllowed((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
+		return eDynamicIsSet(featureID);
 	}
 
 } //AnnotationRootImpl

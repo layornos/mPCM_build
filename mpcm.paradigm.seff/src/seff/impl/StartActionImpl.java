@@ -2,15 +2,11 @@
  */
 package seff.impl;
 
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
@@ -73,21 +69,6 @@ public class StartActionImpl extends AbstractInternalControlFlowActionImpl imple
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	@SuppressWarnings("unchecked")
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case SeffPackage.START_ACTION___START_ACTION_PREDECESSOR_MUST_NOT_BE_DEFINED__DIAGNOSTICCHAIN_MAP:
-				return StartActionPredecessorMustNotBeDefined((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //StartActionImpl
