@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import resourceinterfaces.resourcetype.ResourceInterface;
 import resourceinterfaces.resourcetype.ResourceSignature;
 import resourceinterfaces.resourcetype.ResourcetypePackage;
+import resources.resourcetype.ResourceRepository;
 
 /**
  * <!-- begin-user-doc -->
@@ -162,6 +163,12 @@ public class ResourceInterfaceImpl extends EntityImpl implements ResourceInterfa
 				return resourceSignatures__ResourceInterface != null && !resourceSignatures__ResourceInterface.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	@Override
+	public ResourceRepository getResourceRepository__ResourceInterface() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //ResourceInterfaceImpl

@@ -5,6 +5,15 @@ package behaviourseff.impl;
 import behaviourseff.BehaviourSEFF;
 import behaviourseff.BehaviourseffPackage;
 
+import org.eclipse.emf.cdo.CDOLock;
+import org.eclipse.emf.cdo.CDOObjectHistory;
+import org.eclipse.emf.cdo.CDOState;
+import org.eclipse.emf.cdo.common.id.CDOID;
+import org.eclipse.emf.cdo.common.lock.CDOLockState;
+import org.eclipse.emf.cdo.common.revision.CDORevision;
+import org.eclipse.emf.cdo.common.security.CDOPermission;
+import org.eclipse.emf.cdo.eresource.CDOResource;
+import org.eclipse.emf.cdo.view.CDOView;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -173,6 +182,132 @@ public class BehaviourSEFFImpl extends ServiceEffectSpecificationImpl implements
 				return behaviour != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	@Override
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setId(String value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean cdoConflict() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public CDOResource cdoDirectResource() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOObjectHistory cdoHistory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOID cdoID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean cdoInvalid() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public CDOLockState cdoLockState() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOPermission cdoPermission() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void cdoPrefetch(int arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CDOLock cdoReadLock() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void cdoReload() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CDOResource cdoResource() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDORevision cdoRevision() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDORevision cdoRevision(boolean arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOState cdoState() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOView cdoView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOLock cdoWriteLock() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CDOLock cdoWriteOption() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getEntityName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setEntityName(String value) {
+		// TODO Auto-generated method stub
+		
 	}
 
 } //BehaviourSEFFImpl

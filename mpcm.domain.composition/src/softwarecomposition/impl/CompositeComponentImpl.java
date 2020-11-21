@@ -2,9 +2,12 @@
  */
 package softwarecomposition.impl;
 
+import composition.AssemblyContext;
+import composition.Connector;
 import composition.impl.ComposedProvidingRequiringEntityImpl;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -329,6 +332,18 @@ public class CompositeComponentImpl extends ComposedProvidingRequiringEntityImpl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	}
+
+	@Override
+	public Collection<Object> getAssemblyContexts__ComposedStructure() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Connector> getConnectors__ComposedStructure() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //CompositeComponentImpl

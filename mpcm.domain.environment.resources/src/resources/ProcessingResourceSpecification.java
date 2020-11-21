@@ -3,11 +3,13 @@
 package resources;
 
 import de.uka.ipd.sdq.identifier.Identifier;
+import de.uka.ipd.sdq.stoex.RandomVariable;
 
 import org.eclipse.emf.ecore.EObject;
 
 import resources.resourcetype.ProcessingResourceType;
 import resources.resourcetype.SchedulingPolicy;
+import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -170,5 +172,7 @@ public interface ProcessingResourceSpecification extends EObject, Identifier {
 	 * @generated
 	 */
 	void setResourceContainer_ProcessingResourceSpecification(ResourceContainer value);
+
+	PCMRandomVariable getProcessingRate_ProcessingResourceSpecification();
 
 } // ProcessingResourceSpecification

@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
+import base.Entity;
 import repository.Signature;
 
 /**
@@ -33,7 +34,7 @@ import repository.Signature;
  * @model abstract="true"
  * @generated
  */
-public interface ServiceEffectSpecification extends EObject {
+public interface ServiceEffectSpecification extends Entity {
 	/**
 	 * Returns the value of the '<em><b>Seff Type ID</b></em>' attribute.
 	 * The default value is <code>"1"</code>.

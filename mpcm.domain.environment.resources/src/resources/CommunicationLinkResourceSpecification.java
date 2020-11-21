@@ -3,12 +3,13 @@
 package resources;
 
 import de.uka.ipd.sdq.identifier.Identifier;
-
+import de.uka.ipd.sdq.stoex.RandomVariable;
 import environment.LinkingResource;
 
 import org.eclipse.emf.ecore.EObject;
 
 import resources.resourcetype.CommunicationLinkResourceType;
+import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -75,5 +76,11 @@ public interface CommunicationLinkResourceSpecification extends EObject, Identif
 	 * @generated
 	 */
 	void setCommunicationLinkResourceType_CommunicationLinkResourceSpecification(CommunicationLinkResourceType value);
+
+	CommunicationLinkResourceSpecification getCommunicationLinkResourceSpecifications_LinkingResource();
+
+	PCMRandomVariable getLatency_CommunicationLinkResourceSpecification();
+
+	PCMRandomVariable getThroughput_CommunicationLinkResourceSpecification();
 
 } // CommunicationLinkResourceSpecification

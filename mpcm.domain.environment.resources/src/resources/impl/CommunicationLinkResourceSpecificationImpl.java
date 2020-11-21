@@ -17,6 +17,7 @@ import resources.CommunicationLinkResourceSpecification;
 import resources.ResourcesPackage;
 
 import resources.resourcetype.CommunicationLinkResourceType;
+import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -216,6 +217,24 @@ public class CommunicationLinkResourceSpecificationImpl extends IdentifierImpl i
 				return communicationLinkResourceType_CommunicationLinkResourceSpecification != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	@Override
+	public CommunicationLinkResourceSpecification getCommunicationLinkResourceSpecifications_LinkingResource() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PCMRandomVariable getLatency_CommunicationLinkResourceSpecification() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PCMRandomVariable getThroughput_CommunicationLinkResourceSpecification() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //CommunicationLinkResourceSpecificationImpl

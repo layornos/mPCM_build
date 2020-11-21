@@ -74,4 +74,6 @@ public interface AcquireAction extends AbstractInternalControlFlowAction {
 	 */
 	boolean TimeoutValueOfAcquireActionMustNotBeNegative(DiagnosticChain diagnostics, Map<Object, Object> context);
 
+	double getTimeoutValue();
+
 } // AcquireAction

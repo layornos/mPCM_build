@@ -8,6 +8,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import de.uka.ipd.sdq.identifier.Identifier;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Resource Container</b></em>'.
@@ -26,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ResourceContainer extends EObject {
+public interface ResourceContainer extends Identifier {
 	/**
 	 * Returns the value of the '<em><b>Container</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -76,5 +78,7 @@ public interface ResourceContainer extends EObject {
 	 * @generated
 	 */
 	EList<HDDProcessingResourceSpecification> getHddResourceSpecifications();
+
+	String getId();
 
 } // ResourceContainer

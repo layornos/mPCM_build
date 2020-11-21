@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import environment.LinkingResource;
 import resources.CommunicationLinkResourceSpecification;
 import resources.ResourceContainer;
 import resources.ResourceEnvironment;
@@ -184,6 +185,24 @@ public class ResourceEnvironmentImpl extends MinimalEObjectImpl.Container implem
 				return communicationLinkResourceSpecifications != null && !communicationLinkResourceSpecifications.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	@Override
+	public Object getEntityName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EList<ResourceContainer> getResourceContainer_ResourceEnvironment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EList<LinkingResource> getLinkingResources__ResourceEnvironment() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //ResourceEnvironmentImpl

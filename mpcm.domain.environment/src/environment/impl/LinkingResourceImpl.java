@@ -234,4 +234,10 @@ public class LinkingResourceImpl extends EntityImpl implements LinkingResource {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
+	public LinkingResource getCommunicationLinkResourceSpecifications_LinkingResource() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 } //LinkingResourceImpl

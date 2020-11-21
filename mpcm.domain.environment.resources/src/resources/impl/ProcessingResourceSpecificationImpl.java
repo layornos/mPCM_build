@@ -20,6 +20,7 @@ import resources.ResourcesPackage;
 
 import resources.resourcetype.ProcessingResourceType;
 import resources.resourcetype.SchedulingPolicy;
+import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -437,6 +438,12 @@ public class ProcessingResourceSpecificationImpl extends IdentifierImpl implemen
 		result.append(numberOfReplicas);
 		result.append(')');
 		return result.toString();
+	}
+
+	@Override
+	public PCMRandomVariable getProcessingRate_ProcessingResourceSpecification() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //ProcessingResourceSpecificationImpl

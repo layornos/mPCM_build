@@ -5,6 +5,9 @@ package resources;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EStructuralFeature;
+
+import environment.LinkingResource;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,5 +50,11 @@ public interface ResourceEnvironment extends EObject {
 	 * @generated
 	 */
 	EList<CommunicationLinkResourceSpecification> getCommunicationLinkResourceSpecifications();
+
+	Object getEntityName();
+
+	EList<ResourceContainer> getResourceContainer_ResourceEnvironment();
+
+	EList<LinkingResource> getLinkingResources__ResourceEnvironment();
 
 } // ResourceEnvironment
