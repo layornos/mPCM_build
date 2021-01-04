@@ -1,1 +1,1 @@
-# mPCM Modularized SimuLizar
+# Modularized Palladio Component Model
