@@ -9,6 +9,7 @@ import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
@@ -16,7 +17,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import environment.LinkingResource;
 import resources.CommunicationLinkResourceSpecification;
 import resources.ResourceContainer;
 import resources.ResourceEnvironment;
@@ -188,19 +188,19 @@ public class ResourceEnvironmentImpl extends MinimalEObjectImpl.Container implem
 	}
 
 	@Override
-	public Object getEntityName() {
+	public String getEntityName() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public EList<ResourceContainer> getResourceContainer_ResourceEnvironment() {
+	public Iterable<EStructuralFeature> getResourceContainer_ResourceEnvironment() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public EList<LinkingResource> getLinkingResources__ResourceEnvironment() {
+	public Iterable<EStructuralFeature> getLinkingResources__ResourceEnvironment() {
 		// TODO Auto-generated method stub
 		return null;
 	}

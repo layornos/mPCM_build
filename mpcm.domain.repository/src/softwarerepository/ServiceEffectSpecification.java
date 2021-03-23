@@ -7,8 +7,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
-
-import base.Entity;
 import repository.Signature;
 
 /**
@@ -34,7 +32,7 @@ import repository.Signature;
  * @model abstract="true"
  * @generated
  */
-public interface ServiceEffectSpecification extends Entity {
+public interface ServiceEffectSpecification extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Seff Type ID</b></em>' attribute.
 	 * The default value is <code>"1"</code>.
@@ -115,5 +113,7 @@ public interface ServiceEffectSpecification extends Entity {
 	 * @generated
 	 */
 	boolean ReferencedSignatureMustBelongToInterfaceReferencedByProvidedRole(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	String getId();
 
 } // ServiceEffectSpecification

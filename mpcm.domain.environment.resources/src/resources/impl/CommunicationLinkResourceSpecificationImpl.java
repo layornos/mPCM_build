@@ -3,7 +3,7 @@
 package resources.impl;
 
 import de.uka.ipd.sdq.identifier.impl.IdentifierImpl;
-
+import de.uka.ipd.sdq.stoex.RandomVariable;
 import environment.LinkingResource;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -17,7 +17,6 @@ import resources.CommunicationLinkResourceSpecification;
 import resources.ResourcesPackage;
 
 import resources.resourcetype.CommunicationLinkResourceType;
-import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -220,19 +219,13 @@ public class CommunicationLinkResourceSpecificationImpl extends IdentifierImpl i
 	}
 
 	@Override
-	public CommunicationLinkResourceSpecification getCommunicationLinkResourceSpecifications_LinkingResource() {
+	public RandomVariable getLatency_CommunicationLinkResourceSpecification() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public PCMRandomVariable getLatency_CommunicationLinkResourceSpecification() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public PCMRandomVariable getThroughput_CommunicationLinkResourceSpecification() {
+	public RandomVariable getThroughput_CommunicationLinkResourceSpecification() {
 		// TODO Auto-generated method stub
 		return null;
 	}

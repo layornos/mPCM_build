@@ -2,6 +2,8 @@
  */
 package events.allocation.impl;
 
+import allocation.AllocationDomainPackage;
+
 import base.BasePackage;
 
 import behaviourseff.BehaviourseffPackage;
@@ -106,7 +108,7 @@ public class AllocationPackageImpl extends EPackageImpl implements AllocationPac
 		isInited = true;
 
 		// Initialize simple dependencies
-		allocation.AllocationPackage.eINSTANCE.eClass();
+		AllocationDomainPackage.eINSTANCE.eClass();
 		BasePackage.eINSTANCE.eClass();
 		BehaviourseffPackage.eINSTANCE.eClass();
 		CompositionPackage.eINSTANCE.eClass();
@@ -223,7 +225,7 @@ public class AllocationPackageImpl extends EPackageImpl implements AllocationPac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		allocation.AllocationPackage theAllocationPackage_1 = (allocation.AllocationPackage)EPackage.Registry.INSTANCE.getEPackage(allocation.AllocationPackage.eNS_URI);
+		AllocationDomainPackage theAllocationDomainPackage = (AllocationDomainPackage)EPackage.Registry.INSTANCE.getEPackage(AllocationDomainPackage.eNS_URI);
 		events.composition.CompositionPackage theCompositionPackage_1 = (events.composition.CompositionPackage)EPackage.Registry.INSTANCE.getEPackage(events.composition.CompositionPackage.eNS_URI);
 
 		// Create type parameters
@@ -231,7 +233,7 @@ public class AllocationPackageImpl extends EPackageImpl implements AllocationPac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		eventChannelAllocationEClass.getESuperTypes().add(theAllocationPackage_1.getDeployable());
+		eventChannelAllocationEClass.getESuperTypes().add(theAllocationDomainPackage.getDeployable());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(eventChannelAllocationEClass, EventChannelAllocation.class, "EventChannelAllocation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

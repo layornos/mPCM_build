@@ -3,9 +3,6 @@
 package softwarecomposition;
 
 import java.util.Collection;
-import java.util.List;
-
-import composition.AssemblyContext;
 import composition.ComposedProvidingRequiringEntity;
 
 import softwarerepository.ImplementationComponentType;

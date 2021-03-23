@@ -9,7 +9,6 @@ import environment.LinkingResource;
 import org.eclipse.emf.ecore.EObject;
 
 import resources.resourcetype.CommunicationLinkResourceType;
-import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,10 +76,8 @@ public interface CommunicationLinkResourceSpecification extends EObject, Identif
 	 */
 	void setCommunicationLinkResourceType_CommunicationLinkResourceSpecification(CommunicationLinkResourceType value);
 
-	CommunicationLinkResourceSpecification getCommunicationLinkResourceSpecifications_LinkingResource();
+	RandomVariable getLatency_CommunicationLinkResourceSpecification();
 
-	PCMRandomVariable getLatency_CommunicationLinkResourceSpecification();
-
-	PCMRandomVariable getThroughput_CommunicationLinkResourceSpecification();
+	RandomVariable getThroughput_CommunicationLinkResourceSpecification();
 
 } // CommunicationLinkResourceSpecification

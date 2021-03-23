@@ -10,7 +10,7 @@
       <!-- @generated allocation -->
       <package
             uri="mpcm.domain.allocation"
-            class="allocation.AllocationPackage"
+            class="allocation.AllocationDomainPackage"
             genModel="model/allocation.genmodel"/>
    </extension>
 

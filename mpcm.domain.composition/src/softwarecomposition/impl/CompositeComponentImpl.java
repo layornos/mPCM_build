@@ -2,7 +2,6 @@
  */
 package softwarecomposition.impl;
 
-import composition.AssemblyContext;
 import composition.Connector;
 import composition.impl.ComposedProvidingRequiringEntityImpl;
 

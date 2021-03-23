@@ -9,7 +9,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import resources.resourcetype.ProcessingResourceType;
 import resources.resourcetype.SchedulingPolicy;
-import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -173,6 +172,6 @@ public interface ProcessingResourceSpecification extends EObject, Identifier {
 	 */
 	void setResourceContainer_ProcessingResourceSpecification(ResourceContainer value);
 
-	PCMRandomVariable getProcessingRate_ProcessingResourceSpecification();
+	RandomVariable getProcessingRate_ProcessingResourceSpecification();
 
 } // ProcessingResourceSpecification

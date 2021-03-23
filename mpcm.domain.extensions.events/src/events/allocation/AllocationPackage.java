@@ -2,6 +2,8 @@
  */
 package events.allocation;
 
+import allocation.AllocationDomainPackage;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -71,7 +73,7 @@ public interface AllocationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_CHANNEL_ALLOCATION__EVENT_CHANNEL = allocation.AllocationPackage.DEPLOYABLE_FEATURE_COUNT + 0;
+	int EVENT_CHANNEL_ALLOCATION__EVENT_CHANNEL = AllocationDomainPackage.DEPLOYABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Event Channel Allocation</em>' class.
@@ -80,7 +82,7 @@ public interface AllocationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_CHANNEL_ALLOCATION_FEATURE_COUNT = allocation.AllocationPackage.DEPLOYABLE_FEATURE_COUNT + 1;
+	int EVENT_CHANNEL_ALLOCATION_FEATURE_COUNT = AllocationDomainPackage.DEPLOYABLE_FEATURE_COUNT + 1;
 
 
 	/**

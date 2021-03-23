@@ -2,7 +2,7 @@
  */
 package allocation.impl;
 
-import allocation.AllocationPackage;
+import allocation.AllocationDomainPackage;
 import allocation.Deployable;
 
 import org.eclipse.emf.ecore.EClass;
@@ -33,7 +33,7 @@ public abstract class DeployableImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AllocationPackage.Literals.DEPLOYABLE;
+		return AllocationDomainPackage.Literals.DEPLOYABLE;
 	}
 
 } //DeployableImpl

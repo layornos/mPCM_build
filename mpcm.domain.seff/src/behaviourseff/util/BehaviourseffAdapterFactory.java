@@ -6,6 +6,9 @@ import base.Entity;
 import base.NamedElement;
 
 import behaviourseff.*;
+
+import de.uka.ipd.sdq.identifier.Identifier;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 
@@ -121,7 +124,7 @@ public class BehaviourseffAdapterFactory extends AdapterFactoryImpl {
 				return createServiceEffectSpecificationAdapter();
 			}
 			@Override
-			public Adapter caseIdentifier(de.uka.ipd.sdq.identifier.Identifier object) {
+			public Adapter caseIdentifier(Identifier object) {
 				return createIdentifierAdapter();
 			}
 			@Override

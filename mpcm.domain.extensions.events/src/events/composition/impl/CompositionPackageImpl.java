@@ -2,7 +2,7 @@
  */
 package events.composition.impl;
 
-import allocation.AllocationPackage;
+import allocation.AllocationDomainPackage;
 
 import base.BasePackage;
 
@@ -17,6 +17,8 @@ import de.uka.ipd.sdq.stoex.StoexPackage;
 import de.uka.ipd.sdq.units.UnitsPackage;
 
 import environment.EnvironmentPackage;
+
+import events.allocation.AllocationPackage;
 
 import events.allocation.impl.AllocationPackageImpl;
 
@@ -146,7 +148,7 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 		isInited = true;
 
 		// Initialize simple dependencies
-		AllocationPackage.eINSTANCE.eClass();
+		AllocationDomainPackage.eINSTANCE.eClass();
 		BasePackage.eINSTANCE.eClass();
 		BehaviourseffPackage.eINSTANCE.eClass();
 		composition.CompositionPackage.eINSTANCE.eClass();
@@ -166,20 +168,20 @@ public class CompositionPackageImpl extends EPackageImpl implements CompositionP
 		RepositoryPackageImpl theRepositoryPackage_1 = (RepositoryPackageImpl)(registeredPackage instanceof RepositoryPackageImpl ? registeredPackage : events.repository.RepositoryPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(events.seff.SeffPackage.eNS_URI);
 		SeffPackageImpl theSeffPackage_1 = (SeffPackageImpl)(registeredPackage instanceof SeffPackageImpl ? registeredPackage : events.seff.SeffPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(events.allocation.AllocationPackage.eNS_URI);
-		AllocationPackageImpl theAllocationPackage_1 = (AllocationPackageImpl)(registeredPackage instanceof AllocationPackageImpl ? registeredPackage : events.allocation.AllocationPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AllocationPackage.eNS_URI);
+		AllocationPackageImpl theAllocationPackage = (AllocationPackageImpl)(registeredPackage instanceof AllocationPackageImpl ? registeredPackage : AllocationPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theCompositionPackage.createPackageContents();
 		theRepositoryPackage_1.createPackageContents();
 		theSeffPackage_1.createPackageContents();
-		theAllocationPackage_1.createPackageContents();
+		theAllocationPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theCompositionPackage.initializePackageContents();
 		theRepositoryPackage_1.initializePackageContents();
 		theSeffPackage_1.initializePackageContents();
-		theAllocationPackage_1.initializePackageContents();
+		theAllocationPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theCompositionPackage.freeze();

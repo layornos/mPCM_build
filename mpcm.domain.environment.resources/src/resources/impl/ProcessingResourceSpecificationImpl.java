@@ -3,6 +3,7 @@
 package resources.impl;
 
 import de.uka.ipd.sdq.identifier.impl.IdentifierImpl;
+import de.uka.ipd.sdq.stoex.RandomVariable;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -20,7 +21,6 @@ import resources.ResourcesPackage;
 
 import resources.resourcetype.ProcessingResourceType;
 import resources.resourcetype.SchedulingPolicy;
-import variables.PCMRandomVariable;
 
 /**
  * <!-- begin-user-doc -->
@@ -441,7 +441,7 @@ public class ProcessingResourceSpecificationImpl extends IdentifierImpl implemen
 	}
 
 	@Override
-	public PCMRandomVariable getProcessingRate_ProcessingResourceSpecification() {
+	public RandomVariable getProcessingRate_ProcessingResourceSpecification() {
 		// TODO Auto-generated method stub
 		return null;
 	}

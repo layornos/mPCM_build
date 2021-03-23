@@ -29,7 +29,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link allocation.Allocation#getAllocationContexts_Allocation <em>Allocation Contexts Allocation</em>}</li>
  * </ul>
  *
- * @see allocation.AllocationPackage#getAllocation()
+ * @see allocation.AllocationDomainPackage#getAllocation()
  * @model
  * @generated
  */
@@ -40,7 +40,7 @@ public interface Allocation extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Resource Environment Allocation</em>' reference.
 	 * @see #setTargetResourceEnvironment_Allocation(Environment)
-	 * @see allocation.AllocationPackage#getAllocation_TargetResourceEnvironment_Allocation()
+	 * @see allocation.AllocationDomainPackage#getAllocation_TargetResourceEnvironment_Allocation()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface Allocation extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>System Allocation</em>' reference.
 	 * @see #setSystem_Allocation(softwarecomposition.System)
-	 * @see allocation.AllocationPackage#getAllocation_System_Allocation()
+	 * @see allocation.AllocationDomainPackage#getAllocation_System_Allocation()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface Allocation extends Entity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Allocation Contexts Allocation</em>' containment reference list.
-	 * @see allocation.AllocationPackage#getAllocation_AllocationContexts_Allocation()
+	 * @see allocation.AllocationDomainPackage#getAllocation_AllocationContexts_Allocation()
 	 * @see allocation.AllocationContext#getAllocation_AllocationContext
 	 * @model opposite="allocation_AllocationContext" containment="true" ordered="false"
 	 * @generated

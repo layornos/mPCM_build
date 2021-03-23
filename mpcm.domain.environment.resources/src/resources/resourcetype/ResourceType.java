@@ -2,12 +2,9 @@
  */
 package resources.resourcetype;
 
-import org.eclipse.emf.common.util.EList;
-
 import base.Entity;
 
 import de.uka.ipd.sdq.units.UnitCarryingElement;
-import repository.Role;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +50,5 @@ public interface ResourceType extends Entity, UnitCarryingElement {
 	 * @generated
 	 */
 	void setResourceRepository_ResourceType(ResourceRepository value);
-
-	EList<Role> getResourceProvidedRoles__ResourceInterfaceProvidingEntity();
 
 } // ResourceType
