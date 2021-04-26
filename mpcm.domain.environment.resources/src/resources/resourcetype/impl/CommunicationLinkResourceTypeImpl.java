@@ -2,6 +2,8 @@
  */
 package resources.resourcetype.impl;
 
+import java.util.List;
+
 import org.eclipse.emf.ecore.EClass;
 
 import resources.resourcetype.CommunicationLinkResourceType;
@@ -32,6 +34,12 @@ public class CommunicationLinkResourceTypeImpl extends ResourceTypeImpl implemen
 	@Override
 	protected EClass eStaticClass() {
 		return ResourcetypePackage.Literals.COMMUNICATION_LINK_RESOURCE_TYPE;
+	}
+
+	@Override
+	public List<Object> getResourceProvidedRoles__ResourceInterfaceProvidingEntity() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //CommunicationLinkResourceTypeImpl

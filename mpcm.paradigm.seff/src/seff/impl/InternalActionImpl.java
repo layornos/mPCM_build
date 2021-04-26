@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
 
+import de.uka.ipd.sdq.simucomframework.variables.stackframe.SimulatedStack;
 import seff.InternalAction;
 import seff.SeffPackage;
 
@@ -112,6 +113,12 @@ public class InternalActionImpl extends AbstractInternalControlFlowActionImpl im
 
 	@Override
 	public List<Object> getResourceCall__Action() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SimulatedStack<Object> getInternalFailureOccurrenceDescriptions__InternalAction() {
 		// TODO Auto-generated method stub
 		return null;
 	}

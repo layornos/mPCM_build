@@ -2,6 +2,8 @@
  */
 package resources.resourcetype;
 
+import java.util.List;
+
 import base.Entity;
 
 import de.uka.ipd.sdq.units.UnitCarryingElement;
@@ -50,5 +52,7 @@ public interface ResourceType extends Entity, UnitCarryingElement {
 	 * @generated
 	 */
 	void setResourceRepository_ResourceType(ResourceRepository value);
+
+	List<Object> getResourceProvidedRoles__ResourceInterfaceProvidingEntity();
 
 } // ResourceType

@@ -2,6 +2,8 @@
  */
 package resources.resourcetype.impl;
 
+import java.util.List;
+
 import org.eclipse.emf.ecore.EClass;
 
 import resources.resourcetype.ProcessingResourceType;
@@ -32,6 +34,12 @@ public class ProcessingResourceTypeImpl extends ResourceTypeImpl implements Proc
 	@Override
 	protected EClass eStaticClass() {
 		return ResourcetypePackage.Literals.PROCESSING_RESOURCE_TYPE;
+	}
+
+	@Override
+	public List<Object> getResourceProvidedRoles__ResourceInterfaceProvidingEntity() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //ProcessingResourceTypeImpl

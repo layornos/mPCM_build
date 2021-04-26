@@ -7,6 +7,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import de.uka.ipd.sdq.simucomframework.variables.stackframe.SimulatedStack;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Internal Action</b></em>'.
@@ -52,6 +54,8 @@ public interface InternalAction extends AbstractInternalControlFlowAction {
 	List<Object> getResourceDemand_Action();
 
 	List<Object> getResourceCall__Action();
+
+	SimulatedStack<Object> getInternalFailureOccurrenceDescriptions__InternalAction();
 
 	//List<InfrastructureCall> getInfrastructureCall__Action();
 
