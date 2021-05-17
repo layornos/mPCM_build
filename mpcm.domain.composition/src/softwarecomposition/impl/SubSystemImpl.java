@@ -2,6 +2,7 @@
  */
 package softwarecomposition.impl;
 
+import composition.AssemblyContext;
 import composition.Connector;
 import composition.impl.ComposedProvidingRequiringEntityImpl;
 
@@ -41,7 +42,7 @@ public class SubSystemImpl extends ComposedProvidingRequiringEntityImpl implemen
 	}
 
 	@Override
-	public Collection<Object> getAssemblyContexts__ComposedStructure() {
+	public Collection<AssemblyContext> getAssemblyContexts__ComposedStructure() {
 		// TODO Auto-generated method stub
 		return null;
 	}

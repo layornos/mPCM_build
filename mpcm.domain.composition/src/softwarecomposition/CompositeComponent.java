@@ -3,6 +3,8 @@
 package softwarecomposition;
 
 import java.util.Collection;
+
+import composition.AssemblyContext;
 import composition.ComposedProvidingRequiringEntity;
 
 import softwarerepository.ImplementationComponentType;
@@ -23,5 +25,5 @@ import softwarerepository.ImplementationComponentType;
  */
 public interface CompositeComponent extends ComposedProvidingRequiringEntity, ImplementationComponentType {
 
-	Collection<Object> getAssemblyContexts__ComposedStructure();
+	Collection<AssemblyContext> getAssemblyContexts__ComposedStructure();
 } // CompositeComponent

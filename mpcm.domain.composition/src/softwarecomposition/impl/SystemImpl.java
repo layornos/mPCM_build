@@ -3,7 +3,7 @@
 package softwarecomposition.impl;
 
 import base.impl.EntityImpl;
-
+import composition.AssemblyContext;
 import composition.ComposedProvidingRequiringEntity;
 import composition.ComposedStructure;
 import composition.CompositionPackage;
@@ -439,7 +439,7 @@ public class SystemImpl extends EntityImpl implements softwarecomposition.System
 	}
 
 	@Override
-	public Collection<Object> getAssemblyContexts__ComposedStructure() {
+	public Collection<AssemblyContext> getAssemblyContexts__ComposedStructure() {
 		// TODO Auto-generated method stub
 		return null;
 	}

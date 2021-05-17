@@ -2,6 +2,7 @@
  */
 package resources.impl;
 
+import base.impl.EntityImpl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -13,8 +14,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -39,7 +38,7 @@ import resources.ResourcesPackage;
  *
  * @generated
  */
-public class ResourceContainerImpl extends MinimalEObjectImpl.Container implements ResourceContainer {
+public class ResourceContainerImpl extends EntityImpl implements ResourceContainer {
 	/**
 	 * The cached value of the '{@link #getContainer() <em>Container</em>}' reference.
 	 * <!-- begin-user-doc -->

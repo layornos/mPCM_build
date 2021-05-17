@@ -7,7 +7,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="communicationLinkResourceSpecifications"
         upperBound="-1" eType="#//CommunicationLinkResourceSpecification" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResourceContainer">
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceContainer" eSuperTypes="../../mpcm.paradigm.base/model/base.ecore#//Entity">
     <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1"
         eType="ecore:EClass ../../mpcm.domain.environment/model/environment.ecore#//Container"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="activeResourceSpecifications_ResourceContainer"

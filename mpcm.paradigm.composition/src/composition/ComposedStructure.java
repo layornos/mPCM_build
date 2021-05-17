@@ -68,7 +68,7 @@ public interface ComposedStructure extends Entity {
 	 */
 	boolean MultipleConnectorsConstraintForAssemblyConnectors(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	Collection<Object> getAssemblyContexts__ComposedStructure();
+	Collection<AssemblyContext> getAssemblyContexts__ComposedStructure();
 
 	List<Connector> getConnectors__ComposedStructure();
 

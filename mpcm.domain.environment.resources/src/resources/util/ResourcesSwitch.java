@@ -2,6 +2,8 @@
  */
 package resources.util;
 
+import base.Entity;
+import base.NamedElement;
 import de.uka.ipd.sdq.identifier.Identifier;
 
 import org.eclipse.emf.ecore.EObject;
@@ -77,6 +79,9 @@ public class ResourcesSwitch<T> extends Switch<T> {
 			case ResourcesPackage.RESOURCE_CONTAINER: {
 				ResourceContainer resourceContainer = (ResourceContainer)theEObject;
 				T result = caseResourceContainer(resourceContainer);
+				if (result == null) result = caseEntity(resourceContainer);
+				if (result == null) result = caseIdentifier(resourceContainer);
+				if (result == null) result = caseNamedElement(resourceContainer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -193,6 +198,36 @@ public class ResourcesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseIdentifier(Identifier object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Named Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Named Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNamedElement(NamedElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEntity(Entity object) {
 		return null;
 	}
 

@@ -2,6 +2,8 @@
  */
 package resources.util;
 
+import base.Entity;
+import base.NamedElement;
 import de.uka.ipd.sdq.identifier.Identifier;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -92,6 +94,14 @@ public class ResourcesAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseIdentifier(Identifier object) {
 				return createIdentifierAdapter();
+			}
+			@Override
+			public Adapter caseNamedElement(NamedElement object) {
+				return createNamedElementAdapter();
+			}
+			@Override
+			public Adapter caseEntity(Entity object) {
+				return createEntityAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -194,6 +204,34 @@ public class ResourcesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createIdentifierAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link base.NamedElement <em>Named Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see base.NamedElement
+	 * @generated
+	 */
+	public Adapter createNamedElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link base.Entity <em>Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see base.Entity
+	 * @generated
+	 */
+	public Adapter createEntityAdapter() {
 		return null;
 	}
 
