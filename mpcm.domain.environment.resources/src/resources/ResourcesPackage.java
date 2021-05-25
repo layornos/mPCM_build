@@ -2,6 +2,7 @@
  */
 package resources;
 
+import base.BasePackage;
 import de.uka.ipd.sdq.identifier.IdentifierPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -105,13 +106,31 @@ public interface ResourcesPackage extends EPackage {
 	int RESOURCE_CONTAINER = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_CONTAINER__ID = BasePackage.ENTITY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Entity Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_CONTAINER__ENTITY_NAME = BasePackage.ENTITY__ENTITY_NAME;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE_CONTAINER__CONTAINER = 0;
+	int RESOURCE_CONTAINER__CONTAINER = BasePackage.ENTITY_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Active Resource Specifications Resource Container</b></em>' containment reference list.
@@ -120,7 +139,7 @@ public interface ResourcesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE_CONTAINER__ACTIVE_RESOURCE_SPECIFICATIONS_RESOURCE_CONTAINER = 1;
+	int RESOURCE_CONTAINER__ACTIVE_RESOURCE_SPECIFICATIONS_RESOURCE_CONTAINER = BasePackage.ENTITY_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Hdd Resource Specifications</b></em>' reference list.
@@ -129,7 +148,7 @@ public interface ResourcesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE_CONTAINER__HDD_RESOURCE_SPECIFICATIONS = 2;
+	int RESOURCE_CONTAINER__HDD_RESOURCE_SPECIFICATIONS = BasePackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Resource Container</em>' class.
@@ -138,7 +157,7 @@ public interface ResourcesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE_CONTAINER_FEATURE_COUNT = 3;
+	int RESOURCE_CONTAINER_FEATURE_COUNT = BasePackage.ENTITY_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link resources.impl.ProcessingResourceSpecificationImpl <em>Processing Resource Specification</em>}' class.

@@ -175,4 +175,10 @@ public class BehaviourSEFFImpl extends ServiceEffectSpecificationImpl implements
 		return super.eIsSet(featureID);
 	}
 
+	@Override
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 } //BehaviourSEFFImpl

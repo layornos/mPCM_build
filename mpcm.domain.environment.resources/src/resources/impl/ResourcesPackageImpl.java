@@ -383,6 +383,7 @@ public class ResourcesPackageImpl extends EPackageImpl implements ResourcesPacka
 
 		// Obtain other dependent packages
 		ResourcetypePackage theResourcetypePackage = (ResourcetypePackage)EPackage.Registry.INSTANCE.getEPackage(ResourcetypePackage.eNS_URI);
+		BasePackage theBasePackage = (BasePackage)EPackage.Registry.INSTANCE.getEPackage(BasePackage.eNS_URI);
 		EnvironmentPackage theEnvironmentPackage = (EnvironmentPackage)EPackage.Registry.INSTANCE.getEPackage(EnvironmentPackage.eNS_URI);
 		IdentifierPackage theIdentifierPackage = (IdentifierPackage)EPackage.Registry.INSTANCE.getEPackage(IdentifierPackage.eNS_URI);
 
@@ -394,6 +395,7 @@ public class ResourcesPackageImpl extends EPackageImpl implements ResourcesPacka
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		resourceContainerEClass.getESuperTypes().add(theBasePackage.getEntity());
 		processingResourceSpecificationEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());
 		hddProcessingResourceSpecificationEClass.getESuperTypes().add(this.getProcessingResourceSpecification());
 		communicationLinkResourceSpecificationEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());

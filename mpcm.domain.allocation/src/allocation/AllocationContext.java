@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Context</b></em>'.
+ * A representation of the model object '<em><b>Allocation Context</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -31,7 +31,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *   <li>{@link allocation.AllocationContext#getDeployables <em>Deployables</em>}</li>
  * </ul>
  *
- * @see allocation.AllocationPackage#getAllocationContext()
+ * @see allocation.AllocationDomainPackage#getAllocationContext()
  * @model
  * @generated
  */
@@ -42,7 +42,7 @@ public interface AllocationContext extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource Container Allocation Context</em>' reference.
 	 * @see #setResourceContainer_AllocationContext(Container)
-	 * @see allocation.AllocationPackage#getAllocationContext_ResourceContainer_AllocationContext()
+	 * @see allocation.AllocationDomainPackage#getAllocationContext_ResourceContainer_AllocationContext()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface AllocationContext extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Assembly Context Allocation Context</em>' reference.
 	 * @see #setAssemblyContext_AllocationContext(AssemblyContext)
-	 * @see allocation.AllocationPackage#getAllocationContext_AssemblyContext_AllocationContext()
+	 * @see allocation.AllocationDomainPackage#getAllocationContext_AssemblyContext_AllocationContext()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface AllocationContext extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Allocation Allocation Context</em>' container reference.
 	 * @see #setAllocation_AllocationContext(Allocation)
-	 * @see allocation.AllocationPackage#getAllocationContext_Allocation_AllocationContext()
+	 * @see allocation.AllocationDomainPackage#getAllocationContext_Allocation_AllocationContext()
 	 * @see allocation.Allocation#getAllocationContexts_Allocation
 	 * @model opposite="allocationContexts_Allocation" required="true" transient="false" ordered="false"
 	 * @generated
@@ -110,7 +110,7 @@ public interface AllocationContext extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Deployables</em>' reference.
 	 * @see #setDeployables(Deployable)
-	 * @see allocation.AllocationPackage#getAllocationContext_Deployables()
+	 * @see allocation.AllocationDomainPackage#getAllocationContext_Deployables()
 	 * @model ordered="false"
 	 * @generated
 	 */

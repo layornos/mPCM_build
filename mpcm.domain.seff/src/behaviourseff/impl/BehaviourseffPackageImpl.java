@@ -19,9 +19,14 @@ import behaviourseff.SetVariableAction;
 
 import behaviourseff.util.BehaviourseffValidator;
 
+import de.uka.ipd.sdq.identifier.IdentifierPackage;
+
 import de.uka.ipd.sdq.probfunction.ProbfunctionPackage;
 
 import de.uka.ipd.sdq.stoex.StoexPackage;
+
+import de.uka.ipd.sdq.units.UnitsPackage;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
@@ -37,6 +42,7 @@ import repository.RepositoryPackage;
 import seff.SeffPackage;
 
 import softwarerepository.SoftwarerepositoryPackage;
+
 import variables.VariablesPackage;
 
 /**
@@ -171,8 +177,8 @@ public class BehaviourseffPackageImpl extends EPackageImpl implements Behaviours
 		SoftwarerepositoryPackage.eINSTANCE.eClass();
 		StoexPackage.eINSTANCE.eClass();
 		VariablesPackage.eINSTANCE.eClass();
-		de.uka.ipd.sdq.identifier.IdentifierPackage.eINSTANCE.eClass();
-		de.uka.ipd.sdq.units.UnitsPackage.eINSTANCE.eClass();
+		IdentifierPackage.eINSTANCE.eClass();
+		UnitsPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theBehaviourseffPackage.createPackageContents();

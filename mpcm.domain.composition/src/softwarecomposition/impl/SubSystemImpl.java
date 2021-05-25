@@ -2,7 +2,12 @@
  */
 package softwarecomposition.impl;
 
+import composition.AssemblyContext;
+import composition.Connector;
 import composition.impl.ComposedProvidingRequiringEntityImpl;
+
+import java.util.Collection;
+import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -34,6 +39,18 @@ public class SubSystemImpl extends ComposedProvidingRequiringEntityImpl implemen
 	@Override
 	protected EClass eStaticClass() {
 		return SoftwarecompositionPackage.Literals.SUB_SYSTEM;
+	}
+
+	@Override
+	public Collection<AssemblyContext> getAssemblyContexts__ComposedStructure() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Connector> getConnectors__ComposedStructure() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //SubSystemImpl

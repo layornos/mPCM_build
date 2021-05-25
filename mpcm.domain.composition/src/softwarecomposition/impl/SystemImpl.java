@@ -3,15 +3,17 @@
 package softwarecomposition.impl;
 
 import base.impl.EntityImpl;
-
+import composition.AssemblyContext;
 import composition.ComposedProvidingRequiringEntity;
 import composition.ComposedStructure;
 import composition.CompositionPackage;
+import composition.Connector;
 import composition.Containable;
 
 import composition.util.CompositionValidator;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -434,6 +436,18 @@ public class SystemImpl extends EntityImpl implements softwarecomposition.System
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	}
+
+	@Override
+	public Collection<AssemblyContext> getAssemblyContexts__ComposedStructure() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Connector> getConnectors__ComposedStructure() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //SystemImpl

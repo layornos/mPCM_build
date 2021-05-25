@@ -4,10 +4,10 @@ package allocation.impl;
 
 import allocation.Allocation;
 import allocation.AllocationContext;
-import allocation.AllocationPackage;
+import allocation.AllocationDomainPackage;
 import allocation.Deployable;
 
-import allocation.util.AllocationValidator;
+import allocation.util.AllocationDomainValidator;
 
 import base.impl.EntityImpl;
 
@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Context</b></em>'.
+ * An implementation of the model object '<em><b>Allocation Context</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
@@ -95,7 +95,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AllocationPackage.Literals.ALLOCATION_CONTEXT;
+		return AllocationDomainPackage.Literals.ALLOCATION_CONTEXT;
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 			resourceContainer_AllocationContext = (environment.Container)eResolveProxy(oldResourceContainer_AllocationContext);
 			if (resourceContainer_AllocationContext != oldResourceContainer_AllocationContext) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT, oldResourceContainer_AllocationContext, resourceContainer_AllocationContext));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationDomainPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT, oldResourceContainer_AllocationContext, resourceContainer_AllocationContext));
 			}
 		}
 		return resourceContainer_AllocationContext;
@@ -133,7 +133,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 		environment.Container oldResourceContainer_AllocationContext = resourceContainer_AllocationContext;
 		resourceContainer_AllocationContext = newResourceContainer_AllocationContext;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AllocationPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT, oldResourceContainer_AllocationContext, resourceContainer_AllocationContext));
+			eNotify(new ENotificationImpl(this, Notification.SET, AllocationDomainPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT, oldResourceContainer_AllocationContext, resourceContainer_AllocationContext));
 	}
 
 	/**
@@ -147,7 +147,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 			assemblyContext_AllocationContext = (AssemblyContext)eResolveProxy(oldAssemblyContext_AllocationContext);
 			if (assemblyContext_AllocationContext != oldAssemblyContext_AllocationContext) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT, oldAssemblyContext_AllocationContext, assemblyContext_AllocationContext));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationDomainPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT, oldAssemblyContext_AllocationContext, assemblyContext_AllocationContext));
 			}
 		}
 		return assemblyContext_AllocationContext;
@@ -171,7 +171,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 		AssemblyContext oldAssemblyContext_AllocationContext = assemblyContext_AllocationContext;
 		assemblyContext_AllocationContext = newAssemblyContext_AllocationContext;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AllocationPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT, oldAssemblyContext_AllocationContext, assemblyContext_AllocationContext));
+			eNotify(new ENotificationImpl(this, Notification.SET, AllocationDomainPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT, oldAssemblyContext_AllocationContext, assemblyContext_AllocationContext));
 	}
 
 	/**
@@ -180,7 +180,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	 * @generated
 	 */
 	public Allocation getAllocation_AllocationContext() {
-		if (eContainerFeatureID() != AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT) return null;
+		if (eContainerFeatureID() != AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT) return null;
 		return (Allocation)eInternalContainer();
 	}
 
@@ -190,7 +190,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	 * @generated
 	 */
 	public NotificationChain basicSetAllocation_AllocationContext(Allocation newAllocation_AllocationContext, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newAllocation_AllocationContext, AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT, msgs);
+		msgs = eBasicSetContainer((InternalEObject)newAllocation_AllocationContext, AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT, msgs);
 		return msgs;
 	}
 
@@ -200,19 +200,19 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	 * @generated
 	 */
 	public void setAllocation_AllocationContext(Allocation newAllocation_AllocationContext) {
-		if (newAllocation_AllocationContext != eInternalContainer() || (eContainerFeatureID() != AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT && newAllocation_AllocationContext != null)) {
+		if (newAllocation_AllocationContext != eInternalContainer() || (eContainerFeatureID() != AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT && newAllocation_AllocationContext != null)) {
 			if (EcoreUtil.isAncestor(this, newAllocation_AllocationContext))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newAllocation_AllocationContext != null)
-				msgs = ((InternalEObject)newAllocation_AllocationContext).eInverseAdd(this, AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION, Allocation.class, msgs);
+				msgs = ((InternalEObject)newAllocation_AllocationContext).eInverseAdd(this, AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION, Allocation.class, msgs);
 			msgs = basicSetAllocation_AllocationContext(newAllocation_AllocationContext, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT, newAllocation_AllocationContext, newAllocation_AllocationContext));
+			eNotify(new ENotificationImpl(this, Notification.SET, AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT, newAllocation_AllocationContext, newAllocation_AllocationContext));
 	}
 
 	/**
@@ -226,7 +226,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 			deployables = (Deployable)eResolveProxy(oldDeployables);
 			if (deployables != oldDeployables) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationPackage.ALLOCATION_CONTEXT__DEPLOYABLES, oldDeployables, deployables));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationDomainPackage.ALLOCATION_CONTEXT__DEPLOYABLES, oldDeployables, deployables));
 			}
 		}
 		return deployables;
@@ -250,7 +250,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 		Deployable oldDeployables = deployables;
 		deployables = newDeployables;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AllocationPackage.ALLOCATION_CONTEXT__DEPLOYABLES, oldDeployables, deployables));
+			eNotify(new ENotificationImpl(this, Notification.SET, AllocationDomainPackage.ALLOCATION_CONTEXT__DEPLOYABLES, oldDeployables, deployables));
 	}
 
 	/**
@@ -268,8 +268,8 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 AllocationValidator.DIAGNOSTIC_SOURCE,
-						 AllocationValidator.ALLOCATION_CONTEXT__ONE_ASSEMBLY_CONTEXT_OR_ONE_EVENT_CHANNEL_SHOULD_BE_REFERRED,
+						 AllocationDomainValidator.DIAGNOSTIC_SOURCE,
+						 AllocationDomainValidator.ALLOCATION_CONTEXT__ONE_ASSEMBLY_CONTEXT_OR_ONE_EVENT_CHANNEL_SHOULD_BE_REFERRED,
 						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OneAssemblyContextOrOneEventChannelShouldBeReferred", EObjectValidator.getObjectLabel(this, context) }),
 						 new Object [] { this }));
 			}
@@ -286,7 +286,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetAllocation_AllocationContext((Allocation)otherEnd, msgs);
@@ -302,7 +302,7 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
 				return basicSetAllocation_AllocationContext(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -316,8 +316,8 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
-				return eInternalContainer().eInverseRemove(this, AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION, Allocation.class, msgs);
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+				return eInternalContainer().eInverseRemove(this, AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION, Allocation.class, msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
@@ -330,15 +330,15 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
 				if (resolve) return getResourceContainer_AllocationContext();
 				return basicGetResourceContainer_AllocationContext();
-			case AllocationPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
 				if (resolve) return getAssemblyContext_AllocationContext();
 				return basicGetAssemblyContext_AllocationContext();
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
 				return getAllocation_AllocationContext();
-			case AllocationPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
 				if (resolve) return getDeployables();
 				return basicGetDeployables();
 		}
@@ -353,16 +353,16 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
 				setResourceContainer_AllocationContext((environment.Container)newValue);
 				return;
-			case AllocationPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
 				setAssemblyContext_AllocationContext((AssemblyContext)newValue);
 				return;
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
 				setAllocation_AllocationContext((Allocation)newValue);
 				return;
-			case AllocationPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
 				setDeployables((Deployable)newValue);
 				return;
 		}
@@ -377,16 +377,16 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
 				setResourceContainer_AllocationContext((environment.Container)null);
 				return;
-			case AllocationPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
 				setAssemblyContext_AllocationContext((AssemblyContext)null);
 				return;
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
 				setAllocation_AllocationContext((Allocation)null);
 				return;
-			case AllocationPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
 				setDeployables((Deployable)null);
 				return;
 		}
@@ -401,13 +401,13 @@ public class AllocationContextImpl extends EntityImpl implements AllocationConte
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__RESOURCE_CONTAINER_ALLOCATION_CONTEXT:
 				return resourceContainer_AllocationContext != null;
-			case AllocationPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ASSEMBLY_CONTEXT_ALLOCATION_CONTEXT:
 				return assemblyContext_AllocationContext != null;
-			case AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT:
 				return getAllocation_AllocationContext() != null;
-			case AllocationPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
+			case AllocationDomainPackage.ALLOCATION_CONTEXT__DEPLOYABLES:
 				return deployables != null;
 		}
 		return super.eIsSet(featureID);

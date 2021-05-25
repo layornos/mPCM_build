@@ -3,6 +3,9 @@
 package behaviourseff.util;
 
 import behaviourseff.*;
+
+import de.uka.ipd.sdq.identifier.util.IdentifierValidator;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -94,7 +97,7 @@ public class BehaviourseffValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected de.uka.ipd.sdq.identifier.util.IdentifierValidator identifierValidator;
+	protected IdentifierValidator identifierValidator;
 
 	/**
 	 * Creates an instance of the switch.
@@ -105,7 +108,7 @@ public class BehaviourseffValidator extends EObjectValidator {
 	public BehaviourseffValidator() {
 		super();
 		softwarerepositoryValidator = SoftwarerepositoryValidator.INSTANCE;
-		identifierValidator = de.uka.ipd.sdq.identifier.util.IdentifierValidator.INSTANCE;
+		identifierValidator = IdentifierValidator.INSTANCE;
 	}
 
 	/**

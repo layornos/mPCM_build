@@ -3,6 +3,7 @@
 package resourceinterfaces.resourcetype;
 
 import base.Entity;
+import resources.resourcetype.ResourceRepository;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -40,5 +41,7 @@ public interface ResourceInterface extends Entity {
 	 * @generated
 	 */
 	EList<ResourceSignature> getResourceSignatures__ResourceInterface();
+
+	ResourceRepository getResourceRepository__ResourceInterface();
 
 } // ResourceInterface

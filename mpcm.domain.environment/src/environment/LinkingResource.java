@@ -3,6 +3,7 @@
 package environment;
 
 import base.Entity;
+//import resources.CommunicationLinkResourceSpecification;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -63,5 +64,7 @@ public interface LinkingResource extends Entity {
 	 * @generated
 	 */
 	void setResourceEnvironment_LinkingResource(Environment value);
+
+	LinkingResource getCommunicationLinkResourceSpecifications_LinkingResource();
 
 } // LinkingResource

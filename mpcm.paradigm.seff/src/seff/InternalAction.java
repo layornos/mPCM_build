@@ -2,6 +2,7 @@
  */
 package seff;
 
+import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -45,5 +46,13 @@ public interface InternalAction extends AbstractInternalControlFlowAction {
 	 * @generated
 	 */
 	boolean SumOfInternalActionFailureProbabilitiesMustNotExceed1(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	List<Object> getInfrastructureCall__Action();
+
+	List<Object> getResourceDemand_Action();
+
+	List<Object> getResourceCall__Action();
+
+	//List<InfrastructureCall> getInfrastructureCall__Action();
 
 } // InternalAction

@@ -3,7 +3,8 @@
 package composition;
 
 import base.Entity;
-
+import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -66,5 +67,9 @@ public interface ComposedStructure extends Entity {
 	 * @generated
 	 */
 	boolean MultipleConnectorsConstraintForAssemblyConnectors(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	Collection<AssemblyContext> getAssemblyContexts__ComposedStructure();
+
+	List<Connector> getConnectors__ComposedStructure();
 
 } // ComposedStructure

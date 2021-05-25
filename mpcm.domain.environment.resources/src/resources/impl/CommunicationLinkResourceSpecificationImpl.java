@@ -3,7 +3,7 @@
 package resources.impl;
 
 import de.uka.ipd.sdq.identifier.impl.IdentifierImpl;
-
+import de.uka.ipd.sdq.stoex.RandomVariable;
 import environment.LinkingResource;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -216,6 +216,18 @@ public class CommunicationLinkResourceSpecificationImpl extends IdentifierImpl i
 				return communicationLinkResourceType_CommunicationLinkResourceSpecification != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	@Override
+	public RandomVariable getLatency_CommunicationLinkResourceSpecification() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RandomVariable getThroughput_CommunicationLinkResourceSpecification() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //CommunicationLinkResourceSpecificationImpl

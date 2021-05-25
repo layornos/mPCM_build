@@ -6,6 +6,9 @@ import base.Entity;
 import base.NamedElement;
 
 import behaviourseff.*;
+
+import de.uka.ipd.sdq.identifier.Identifier;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -358,7 +361,7 @@ public class BehaviourseffSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIdentifier(de.uka.ipd.sdq.identifier.Identifier object) {
+	public T caseIdentifier(Identifier object) {
 		return null;
 	}
 

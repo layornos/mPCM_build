@@ -4,9 +4,9 @@ package allocation.impl;
 
 import allocation.Allocation;
 import allocation.AllocationContext;
-import allocation.AllocationPackage;
+import allocation.AllocationDomainPackage;
 
-import allocation.util.AllocationValidator;
+import allocation.util.AllocationDomainValidator;
 
 import base.impl.EntityImpl;
 
@@ -96,7 +96,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AllocationPackage.Literals.ALLOCATION;
+		return AllocationDomainPackage.Literals.ALLOCATION;
 	}
 
 	/**
@@ -110,7 +110,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 			targetResourceEnvironment_Allocation = (Environment)eResolveProxy(oldTargetResourceEnvironment_Allocation);
 			if (targetResourceEnvironment_Allocation != oldTargetResourceEnvironment_Allocation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION, oldTargetResourceEnvironment_Allocation, targetResourceEnvironment_Allocation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationDomainPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION, oldTargetResourceEnvironment_Allocation, targetResourceEnvironment_Allocation));
 			}
 		}
 		return targetResourceEnvironment_Allocation;
@@ -134,7 +134,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 		Environment oldTargetResourceEnvironment_Allocation = targetResourceEnvironment_Allocation;
 		targetResourceEnvironment_Allocation = newTargetResourceEnvironment_Allocation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AllocationPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION, oldTargetResourceEnvironment_Allocation, targetResourceEnvironment_Allocation));
+			eNotify(new ENotificationImpl(this, Notification.SET, AllocationDomainPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION, oldTargetResourceEnvironment_Allocation, targetResourceEnvironment_Allocation));
 	}
 
 	/**
@@ -148,7 +148,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 			system_Allocation = (softwarecomposition.System)eResolveProxy(oldSystem_Allocation);
 			if (system_Allocation != oldSystem_Allocation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationPackage.ALLOCATION__SYSTEM_ALLOCATION, oldSystem_Allocation, system_Allocation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AllocationDomainPackage.ALLOCATION__SYSTEM_ALLOCATION, oldSystem_Allocation, system_Allocation));
 			}
 		}
 		return system_Allocation;
@@ -172,7 +172,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 		softwarecomposition.System oldSystem_Allocation = system_Allocation;
 		system_Allocation = newSystem_Allocation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AllocationPackage.ALLOCATION__SYSTEM_ALLOCATION, oldSystem_Allocation, system_Allocation));
+			eNotify(new ENotificationImpl(this, Notification.SET, AllocationDomainPackage.ALLOCATION__SYSTEM_ALLOCATION, oldSystem_Allocation, system_Allocation));
 	}
 
 	/**
@@ -182,7 +182,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	 */
 	public EList<AllocationContext> getAllocationContexts_Allocation() {
 		if (allocationContexts_Allocation == null) {
-			allocationContexts_Allocation = new EObjectContainmentWithInverseEList<AllocationContext>(AllocationContext.class, this, AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION, AllocationPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT);
+			allocationContexts_Allocation = new EObjectContainmentWithInverseEList<AllocationContext>(AllocationContext.class, this, AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION, AllocationDomainPackage.ALLOCATION_CONTEXT__ALLOCATION_ALLOCATION_CONTEXT);
 		}
 		return allocationContexts_Allocation;
 	}
@@ -202,8 +202,8 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 AllocationValidator.DIAGNOSTIC_SOURCE,
-						 AllocationValidator.ALLOCATION__EACH_ASSEMBLY_CONTEXT_WITHIN_SYSTEM_HAS_TO_BE_ALLOCATED_EXACTLY_ONCE,
+						 AllocationDomainValidator.DIAGNOSTIC_SOURCE,
+						 AllocationDomainValidator.ALLOCATION__EACH_ASSEMBLY_CONTEXT_WITHIN_SYSTEM_HAS_TO_BE_ALLOCATED_EXACTLY_ONCE,
 						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EachAssemblyContextWithinSystemHasToBeAllocatedExactlyOnce", EObjectValidator.getObjectLabel(this, context) }),
 						 new Object [] { this }));
 			}
@@ -227,8 +227,8 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 AllocationValidator.DIAGNOSTIC_SOURCE,
-						 AllocationValidator.ALLOCATION__COMMUNICATING_SERVERS_HAVE_TO_BE_CONNECTED_BY_LINKING_RESOURCE,
+						 AllocationDomainValidator.DIAGNOSTIC_SOURCE,
+						 AllocationDomainValidator.ALLOCATION__COMMUNICATING_SERVERS_HAVE_TO_BE_CONNECTED_BY_LINKING_RESOURCE,
 						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CommunicatingServersHaveToBeConnectedByLinkingResource", EObjectValidator.getObjectLabel(this, context) }),
 						 new Object [] { this }));
 			}
@@ -246,7 +246,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getAllocationContexts_Allocation()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -260,7 +260,7 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
 				return ((InternalEList<?>)getAllocationContexts_Allocation()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -274,13 +274,13 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
 				if (resolve) return getTargetResourceEnvironment_Allocation();
 				return basicGetTargetResourceEnvironment_Allocation();
-			case AllocationPackage.ALLOCATION__SYSTEM_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__SYSTEM_ALLOCATION:
 				if (resolve) return getSystem_Allocation();
 				return basicGetSystem_Allocation();
-			case AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
 				return getAllocationContexts_Allocation();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -295,13 +295,13 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
 				setTargetResourceEnvironment_Allocation((Environment)newValue);
 				return;
-			case AllocationPackage.ALLOCATION__SYSTEM_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__SYSTEM_ALLOCATION:
 				setSystem_Allocation((softwarecomposition.System)newValue);
 				return;
-			case AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
 				getAllocationContexts_Allocation().clear();
 				getAllocationContexts_Allocation().addAll((Collection<? extends AllocationContext>)newValue);
 				return;
@@ -317,13 +317,13 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
 				setTargetResourceEnvironment_Allocation((Environment)null);
 				return;
-			case AllocationPackage.ALLOCATION__SYSTEM_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__SYSTEM_ALLOCATION:
 				setSystem_Allocation((softwarecomposition.System)null);
 				return;
-			case AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
 				getAllocationContexts_Allocation().clear();
 				return;
 		}
@@ -338,11 +338,11 @@ public class AllocationImpl extends EntityImpl implements Allocation {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case AllocationPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__TARGET_RESOURCE_ENVIRONMENT_ALLOCATION:
 				return targetResourceEnvironment_Allocation != null;
-			case AllocationPackage.ALLOCATION__SYSTEM_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__SYSTEM_ALLOCATION:
 				return system_Allocation != null;
-			case AllocationPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
+			case AllocationDomainPackage.ALLOCATION__ALLOCATION_CONTEXTS_ALLOCATION:
 				return allocationContexts_Allocation != null && !allocationContexts_Allocation.isEmpty();
 		}
 		return super.eIsSet(featureID);

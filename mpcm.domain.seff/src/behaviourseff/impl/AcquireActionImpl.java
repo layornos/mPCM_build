@@ -193,4 +193,10 @@ public class AcquireActionImpl extends AbstractInternalControlFlowActionImpl imp
 		return super.eIsSet(featureID);
 	}
 
+	@Override
+	public double getTimeoutValue() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 } //AcquireActionImpl

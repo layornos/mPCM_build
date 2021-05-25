@@ -2,6 +2,7 @@
  */
 package seff.impl;
 
+import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -95,6 +96,24 @@ public class InternalActionImpl extends AbstractInternalControlFlowActionImpl im
 			return false;
 		}
 		return true;
+	}
+
+	@Override
+	public List<Object> getInfrastructureCall__Action() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Object> getResourceDemand_Action() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Object> getResourceCall__Action() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //InternalActionImpl

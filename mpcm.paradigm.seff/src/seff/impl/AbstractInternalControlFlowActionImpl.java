@@ -3,7 +3,6 @@
 package seff.impl;
 
 import org.eclipse.emf.ecore.EClass;
-
 import seff.AbstractInternalControlFlowAction;
 import seff.SeffPackage;
 
@@ -23,7 +22,6 @@ public abstract class AbstractInternalControlFlowActionImpl extends AbstractActi
 	protected AbstractInternalControlFlowActionImpl() {
 		super();
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -3,6 +3,7 @@
 package resources.impl;
 
 import de.uka.ipd.sdq.identifier.impl.IdentifierImpl;
+import de.uka.ipd.sdq.stoex.RandomVariable;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -437,6 +438,12 @@ public class ProcessingResourceSpecificationImpl extends IdentifierImpl implemen
 		result.append(numberOfReplicas);
 		result.append(')');
 		return result.toString();
+	}
+
+	@Override
+	public RandomVariable getProcessingRate_ProcessingResourceSpecification() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //ProcessingResourceSpecificationImpl

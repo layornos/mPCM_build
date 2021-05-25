@@ -3,6 +3,7 @@
 package resources;
 
 import de.uka.ipd.sdq.identifier.Identifier;
+import de.uka.ipd.sdq.stoex.RandomVariable;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -170,5 +171,7 @@ public interface ProcessingResourceSpecification extends EObject, Identifier {
 	 * @generated
 	 */
 	void setResourceContainer_ProcessingResourceSpecification(ResourceContainer value);
+
+	RandomVariable getProcessingRate_ProcessingResourceSpecification();
 
 } // ProcessingResourceSpecification

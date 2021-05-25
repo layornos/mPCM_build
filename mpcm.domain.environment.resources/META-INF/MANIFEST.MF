@@ -19,5 +19,6 @@ Require-Bundle: org.eclipse.core.runtime,
  mpcm.paradigm.base;visibility:=reexport,
  mpcm.domain.environment;visibility:=reexport,
  de.uka.ipd.sdq.identifier;visibility:=reexport,
- de.uka.ipd.sdq.units;visibility:=reexport
+ de.uka.ipd.sdq.units;visibility:=reexport,
+ de.uka.ipd.sdq.stoex
 Bundle-ActivationPolicy: lazy

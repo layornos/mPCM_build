@@ -9,6 +9,7 @@ import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
@@ -184,6 +185,24 @@ public class ResourceEnvironmentImpl extends MinimalEObjectImpl.Container implem
 				return communicationLinkResourceSpecifications != null && !communicationLinkResourceSpecifications.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	@Override
+	public String getEntityName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<EStructuralFeature> getResourceContainer_ResourceEnvironment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<EStructuralFeature> getLinkingResources__ResourceEnvironment() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //ResourceEnvironmentImpl
